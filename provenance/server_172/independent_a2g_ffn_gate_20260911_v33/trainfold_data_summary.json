@@ -1,0 +1,459 @@
+{
+  "capacity_correction": "Two reserved IDs (padding=0, unknown=1), then known IDs from 2. The five original CSVs and maps are unchanged.",
+  "capacity_semantics": "num_c and num_q are embedding capacities, not maximum IDs",
+  "datasets": {
+    "assist2009_corrected_collapsed": {
+      "baseline_retraining_required": true,
+      "counts": {
+        "learner_fold_overlap": 0,
+        "learners_per_fold": {
+          "0": 617,
+          "1": 617,
+          "2": 616,
+          "3": 616,
+          "4": 616
+        },
+        "rows_per_fold": {
+          "0": 741,
+          "1": 741,
+          "2": 750,
+          "3": 778,
+          "4": 747
+        },
+        "scored_interactions_per_fold": {
+          "0": 52825,
+          "1": 51822,
+          "2": 52678,
+          "3": 59610,
+          "4": 53915
+        }
+      },
+      "dataset": "assist2009_corrected_collapsed",
+      "known_vocabulary_sizes": {
+        "concepts": 120,
+        "questions": 17113
+      },
+      "legacy_scores_not_comparable_after_remap": true,
+      "mapping_sha256": "0d719bc795e3e810707c5fcb1eb0f0c7b646cf7e9f8006a4339c0dbe53b751cb",
+      "non_id_fields_sha256": "1823ac895fcc1060fd774a76e9ee59ce2492ae0f9eef927453857212945155b1",
+      "raw_global_mapping_read": false,
+      "reused_without_mutation": true,
+      "rows": 3757,
+      "source_csv": "/home/lpq/EduKTM_Baselines/portable_data/assist2009_corrected_collapsed/train_valid_sequences.csv",
+      "source_sha256": "4b3b6ab7c97aaab6554cbbc869b70b63f1017f5b59bc0ac0c3ab4cbd7152c232",
+      "status": "training_fold_vocab_derived_and_verified",
+      "test_access": false,
+      "transformed_sha256": "d345405534adbe043216e3463d7e2a3e7ef42617c098c66103c5b9b088bf9bd6",
+      "unknown_id_occurrences": {
+        "concepts_fold0": 0,
+        "concepts_fold1": 0,
+        "concepts_fold2": 0,
+        "concepts_fold3": 0,
+        "concepts_fold4": 0,
+        "questions_fold0": 483,
+        "questions_fold1": 0,
+        "questions_fold2": 0,
+        "questions_fold3": 0,
+        "questions_fold4": 0
+      },
+      "window_test_access": false
+    },
+    "assist2012": {
+      "baseline_retraining_required": true,
+      "counts": {
+        "learner_fold_overlap": 0,
+        "learners_per_fold": {
+          "0": 4398,
+          "1": 4398,
+          "2": 4398,
+          "3": 4397,
+          "4": 4397
+        },
+        "rows_per_fold": {
+          "0": 5422,
+          "1": 5362,
+          "2": 5324,
+          "3": 5366,
+          "4": 5374
+        },
+        "scored_interactions_per_fold": {
+          "0": 439766,
+          "1": 432602,
+          "2": 424912,
+          "3": 419158,
+          "4": 423475
+        }
+      },
+      "dataset": "assist2012",
+      "known_vocabulary_sizes": {
+        "concepts": 264,
+        "questions": 51559
+      },
+      "legacy_scores_not_comparable_after_remap": true,
+      "mapping_sha256": "da496bb5c55cd0b6e67a241bd083deffef4ead6800c799e40037b718f39178ca",
+      "non_id_fields_sha256": "1379b3c706cb726da16cc369146ce0a9e5bdfff15df7562d7b1debba12747fbd",
+      "raw_global_mapping_read": false,
+      "reused_without_mutation": false,
+      "rows": 26848,
+      "source_csv": "/home/lpq/EduKTM_Baselines/portable_data/assist2012/train_valid_sequences.csv",
+      "source_sha256": "47b071b9e873fa3c7ff713822ac2372fa4f7b8924b08cf65a2c51b3def4e23b7",
+      "status": "training_fold_vocab_derived_and_verified",
+      "test_access": false,
+      "transformed_sha256": "c19e4852490cbb15c471f45598b6c2d0df20c96d633787816be1f6976c299c2f",
+      "unknown_id_occurrences": {
+        "concepts_fold0": 4,
+        "concepts_fold1": 0,
+        "concepts_fold2": 0,
+        "concepts_fold3": 0,
+        "concepts_fold4": 0,
+        "questions_fold0": 1006,
+        "questions_fold1": 0,
+        "questions_fold2": 0,
+        "questions_fold3": 0,
+        "questions_fold4": 0
+      },
+      "window_test_access": false
+    },
+    "assist2015": {
+      "baseline_retraining_required": true,
+      "counts": {
+        "learner_fold_overlap": 0,
+        "learners_per_fold": {
+          "0": 3055,
+          "1": 3055,
+          "2": 3055,
+          "3": 3055,
+          "4": 3055
+        },
+        "rows_per_fold": {
+          "0": 3082,
+          "1": 3080,
+          "2": 3073,
+          "3": 3092,
+          "4": 3099
+        },
+        "scored_interactions_per_fold": {
+          "0": 102749,
+          "1": 103583,
+          "2": 104370,
+          "3": 108932,
+          "4": 109271
+        }
+      },
+      "dataset": "assist2015",
+      "known_vocabulary_sizes": {
+        "concepts": 100
+      },
+      "legacy_scores_not_comparable_after_remap": true,
+      "mapping_sha256": "63b38a6f978cbe0edbfe5d9ee6f61ab02b6231bc826836ebe20ce008c9d2977c",
+      "non_id_fields_sha256": "764b7c339d0d6a3617e9e56568764e9c498d362977e56e1a397e902c0e0e1a02",
+      "raw_global_mapping_read": false,
+      "reused_without_mutation": true,
+      "rows": 15426,
+      "source_csv": "/home/lpq/EduKTM_Baselines/portable_data/assist2015/train_valid_sequences.csv",
+      "source_sha256": "86a384290579e3b6719c5bf38d78468b478331fee677d1ee4a2895b38fd2752f",
+      "status": "training_fold_vocab_derived_and_verified",
+      "test_access": false,
+      "transformed_sha256": "28e755fc9e406bc840088db2dc41422277be1478a84d298201a349f274615fbc",
+      "unknown_id_occurrences": {
+        "concepts_fold0": 0,
+        "concepts_fold1": 0,
+        "concepts_fold2": 0,
+        "concepts_fold3": 0,
+        "concepts_fold4": 0
+      },
+      "window_test_access": false
+    },
+    "assist2017": {
+      "baseline_retraining_required": true,
+      "counts": {
+        "learner_fold_overlap": 0,
+        "learners_per_fold": {
+          "0": 274,
+          "1": 274,
+          "2": 273,
+          "3": 273,
+          "4": 273
+        },
+        "rows_per_fold": {
+          "0": 905,
+          "1": 849,
+          "2": 867,
+          "3": 978,
+          "4": 888
+        },
+        "scored_interactions_per_fold": {
+          "0": 153067,
+          "1": 141938,
+          "2": 145879,
+          "3": 168980,
+          "4": 149617
+        }
+      },
+      "dataset": "assist2017",
+      "known_vocabulary_sizes": {
+        "concepts": 94,
+        "questions": 3107
+      },
+      "legacy_scores_not_comparable_after_remap": true,
+      "mapping_sha256": "7f8122704d9dea7ad06a19e85a951fae26579ba8d296b4285db4d64bc2eb2ebf",
+      "non_id_fields_sha256": "a12cfd83fc4ddb62f1cdfba6c455c136a61fb85bc5e0d75819e1b758211a9de5",
+      "raw_global_mapping_read": false,
+      "reused_without_mutation": true,
+      "rows": 4487,
+      "source_csv": "/home/lpq/EduKTM_Baselines/portable_data/assist2017/train_valid_sequences.csv",
+      "source_sha256": "1843d19a38bc01b4e27686997ab05970e30b8e9757e9027c4c1359d59a699cc3",
+      "status": "training_fold_vocab_derived_and_verified",
+      "test_access": false,
+      "transformed_sha256": "2fa792134739275c7e27db0d91f2200d9669e6691480ac28e53d2d2f9c614861",
+      "unknown_id_occurrences": {
+        "concepts_fold0": 58,
+        "concepts_fold1": 0,
+        "concepts_fold2": 0,
+        "concepts_fold3": 0,
+        "concepts_fold4": 0,
+        "questions_fold0": 99,
+        "questions_fold1": 0,
+        "questions_fold2": 0,
+        "questions_fold3": 0,
+        "questions_fold4": 0
+      },
+      "window_test_access": false
+    },
+    "junyi2015": {
+      "baseline_retraining_required": true,
+      "counts": {
+        "learner_fold_overlap": 0,
+        "learners_per_fold": {
+          "0": 30700,
+          "1": 30700,
+          "2": 30700,
+          "3": 30700,
+          "4": 30700
+        },
+        "rows_per_fold": {
+          "0": 44927,
+          "1": 44974,
+          "2": 44702,
+          "3": 44940,
+          "4": 45139
+        },
+        "scored_interactions_per_fold": {
+          "0": 4083743,
+          "1": 4099325,
+          "2": 4019262,
+          "3": 4093213,
+          "4": 4115953
+        }
+      },
+      "dataset": "junyi2015",
+      "known_vocabulary_sizes": {
+        "concepts": 39,
+        "questions": 717
+      },
+      "legacy_scores_not_comparable_after_remap": true,
+      "mapping_sha256": "445b2e52cb297ab8abf16b2e1242ec36271f2caea829f61259eb37bf1cf7d9b3",
+      "non_id_fields_sha256": "abfe437a754ffd7ba25028fde3b0fdba08d92035824234091671366d7a8fc8da",
+      "raw_global_mapping_read": false,
+      "reused_without_mutation": false,
+      "rows": 224682,
+      "source_csv": "/home/lpq/EduKTM_Baselines/processed_data/junyi2015/train_valid_sequences.csv",
+      "source_sha256": "9258725a03b200c483e1881252d7a1a63a9ee5b5089f3d8ce9630617af5be234",
+      "status": "training_fold_vocab_derived_and_verified",
+      "test_access": false,
+      "transformed_sha256": "26743ffe6dfaa80c680b136dd43d16beb4e63541bd4f51d6b9eac23fe6d2224c",
+      "unknown_id_occurrences": {
+        "concepts_fold0": 0,
+        "concepts_fold1": 0,
+        "concepts_fold2": 0,
+        "concepts_fold3": 0,
+        "concepts_fold4": 0,
+        "questions_fold0": 31,
+        "questions_fold1": 0,
+        "questions_fold2": 0,
+        "questions_fold3": 0,
+        "questions_fold4": 0
+      },
+      "window_test_access": false
+    },
+    "nips_task34": {
+      "baseline_retraining_required": true,
+      "counts": {
+        "learner_fold_overlap": 0,
+        "learners_per_fold": {
+          "0": 787,
+          "1": 787,
+          "2": 787,
+          "3": 787,
+          "4": 787
+        },
+        "rows_per_fold": {
+          "0": 1503,
+          "1": 1537,
+          "2": 1481,
+          "3": 1497,
+          "4": 1528
+        },
+        "scored_interactions_per_fold": {
+          "0": 223341,
+          "1": 228274,
+          "2": 217100,
+          "3": 220889,
+          "4": 226193
+        }
+      },
+      "dataset": "nips_task34",
+      "known_vocabulary_sizes": {
+        "concepts": 57,
+        "questions": 948
+      },
+      "legacy_scores_not_comparable_after_remap": true,
+      "mapping_sha256": "1f9992157e7492a7a96509611a50f7e335964368bdd0c059493bbbc92fec0a4c",
+      "non_id_fields_sha256": "3ffe43778a0db7af7f87686f68fc057f55c809d8c6fc9bb7383d7ae7636465a6",
+      "raw_global_mapping_read": false,
+      "reused_without_mutation": true,
+      "rows": 7546,
+      "source_csv": "/home/lpq/EduKTM_Baselines/portable_data/nips_task34/train_valid_sequences.csv",
+      "source_sha256": "def976b9ef77b2d209f018aeb25827339408abd091de77e9ba10ff006dc13dcc",
+      "status": "training_fold_vocab_derived_and_verified",
+      "test_access": false,
+      "transformed_sha256": "ebb0ed8eb180f523ad06f2fdf618d771f6f676b4cec2bce702daeb37127b87d8",
+      "unknown_id_occurrences": {
+        "concepts_fold0": 0,
+        "concepts_fold1": 0,
+        "concepts_fold2": 0,
+        "concepts_fold3": 0,
+        "concepts_fold4": 0,
+        "questions_fold0": 0,
+        "questions_fold1": 0,
+        "questions_fold2": 0,
+        "questions_fold3": 0,
+        "questions_fold4": 0
+      },
+      "window_test_access": false
+    },
+    "slepemapy": {
+      "baseline_retraining_required": true,
+      "counts": {
+        "learner_fold_overlap": 0,
+        "learners_per_fold": {
+          "0": 13696,
+          "1": 13696,
+          "2": 13696,
+          "3": 13696,
+          "4": 13696
+        },
+        "rows_per_fold": {
+          "0": 18208,
+          "1": 17838,
+          "2": 17677,
+          "3": 17759,
+          "4": 17695
+        },
+        "scored_interactions_per_fold": {
+          "0": 1669089,
+          "1": 1604550,
+          "2": 1568912,
+          "3": 1578513,
+          "4": 1570979
+        }
+      },
+      "dataset": "slepemapy",
+      "known_vocabulary_sizes": {
+        "concepts": 1457,
+        "questions": 2908
+      },
+      "legacy_scores_not_comparable_after_remap": true,
+      "mapping_sha256": "ff09a649815fd80aef520cb6879c7710f470dfa94921e18b15f4739d53cec57d",
+      "non_id_fields_sha256": "14614b76b500efd4769b3ad6a724b90a89e144e319431b0a148348f75c784aab",
+      "raw_global_mapping_read": false,
+      "reused_without_mutation": true,
+      "rows": 89177,
+      "source_csv": "/home/lpq/EduKTM_Baselines/portable_data/slepemapy/train_valid_sequences.csv",
+      "source_sha256": "f2365f94e67c4ba552d4f1619009dcdf0ed4227dd7ef51c453e37a178ab8b1b7",
+      "status": "training_fold_vocab_derived_and_verified",
+      "test_access": false,
+      "transformed_sha256": "06b859cd2b6e3ab4598b971e10d2a3dd064831b4c570ba0efb6ec19b1fec5efe",
+      "unknown_id_occurrences": {
+        "concepts_fold0": 4,
+        "concepts_fold1": 0,
+        "concepts_fold2": 0,
+        "concepts_fold3": 0,
+        "concepts_fold4": 0,
+        "questions_fold0": 6,
+        "questions_fold1": 0,
+        "questions_fold2": 0,
+        "questions_fold3": 0,
+        "questions_fold4": 0
+      },
+      "window_test_access": false
+    },
+    "statics2011": {
+      "baseline_retraining_required": true,
+      "counts": {
+        "learner_fold_overlap": 0,
+        "learners_per_fold": {
+          "0": 54,
+          "1": 54,
+          "2": 53,
+          "3": 53,
+          "4": 53
+        },
+        "rows_per_fold": {
+          "0": 196,
+          "1": 166,
+          "2": 185,
+          "3": 189,
+          "4": 175
+        },
+        "scored_interactions_per_fold": {
+          "0": 33522,
+          "1": 27027,
+          "2": 31281,
+          "3": 31553,
+          "4": 29807
+        }
+      },
+      "dataset": "statics2011",
+      "known_vocabulary_sizes": {
+        "concepts": 1223
+      },
+      "legacy_scores_not_comparable_after_remap": true,
+      "mapping_sha256": "921b0990fadbd068e873119295af1b4ef97807f7c569e5c331ecd21c4242d7d4",
+      "non_id_fields_sha256": "d77ae9ec142890b54eafd13efd97415ddb01db7b475fd3bd861adffa0d9988ad",
+      "raw_global_mapping_read": false,
+      "reused_without_mutation": false,
+      "rows": 911,
+      "source_csv": "/home/lpq/EduKTM_Baselines/portable_data/statics2011/train_valid_sequences.csv",
+      "source_sha256": "740042a27aa88ea6188316d9812fb38f6863196537fe1f05d7bf7e799c2d5a3b",
+      "status": "training_fold_vocab_derived_and_verified",
+      "test_access": false,
+      "transformed_sha256": "6bc09622f638b24362c2c249b8a6cfd1c1baa2b70c63c23217c162bf2743963f",
+      "unknown_id_occurrences": {
+        "concepts_fold0": 0,
+        "concepts_fold1": 0,
+        "concepts_fold2": 0,
+        "concepts_fold3": 0,
+        "concepts_fold4": 0
+      },
+      "window_test_access": false
+    }
+  },
+  "existing_config_sha256": "cb40c2c314d07a8370e84e07564fac7c6a91e61b80e731bddee39de3917c0aef",
+  "existing_summary_sha256": "87be77ff7a9d453eeff6041f3c44cc48e6825cc018f327ac22906bdca991deaa",
+  "helper_sha256": "4f2bf40932bf09569bef52a4581071b02f4159285ecadd05e01530312c29e55a",
+  "matched_baseline_retraining_required": true,
+  "model_training_completed": false,
+  "script_sha256": "8097cbcb265783a805d75536bd4b3e0049e94b31699846462eea6b5a342fea13",
+  "self_check": {
+    "learner_overlap_rejected": true,
+    "response_invariance": true,
+    "status": "pass",
+    "valid_zero_id_not_padding": true,
+    "validation_id_invariance": true
+  },
+  "source_config_sha256": "74e782bde6a81c9f29e686ffc8bd6e8331fbefaa619074727a65a67a8a9a2878",
+  "status": "complete_eight_dataset_train_fold_vocab",
+  "test_access": false,
+  "window_test_access": false
+}

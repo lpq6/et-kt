@@ -1,0 +1,61 @@
+{
+  "best_epoch": 41,
+  "candidate_id": "single_trunk_retained_memory_readout_20260907_v1",
+  "checkpoint": {
+    "bytes": 16929061,
+    "path": "/home/lpq/a2g_mambakt/independent_trainfold_20260907_v2_172/artifacts/assist2017/seed42/full/selected_model.pt",
+    "sha256": "3d05cba823cb2126b19de52e56bf0edb347a094a6e086e9624cb324b113ee20a"
+  },
+  "checkpoint_selection": "max validation AUC then min NLL, Brier, ECE15 then earliest epoch",
+  "dataset": "assist2017",
+  "duration_seconds": 1255.0720512039843,
+  "epoch_log": {
+    "bytes": 40049,
+    "path": "/home/lpq/a2g_mambakt/independent_trainfold_20260907_v2_172/artifacts/assist2017/seed42/full/epochs.jsonl",
+    "sha256": "5bf1ddfe0a43488c3b3206fed0b190da135fbc965641540b6394a3c49ab1d658"
+  },
+  "epochs": 61,
+  "flags": {
+    "use_attention_branch": 1,
+    "use_evidence_branch": 1,
+    "use_ssm_branch": 1
+  },
+  "initial_state": {
+    "bytes": 16925529,
+    "path": "/home/lpq/a2g_mambakt/independent_trainfold_20260907_v2_172/artifacts/assist2017/seed42/initial_state.pt",
+    "sha256": "c083eacc76d6854bab60329586a375eef9c29ab7ebe9ba93411a84c01abe593f"
+  },
+  "metrics": {
+    "acc": 0.7263747247937178,
+    "auc": 0.7857959831005806,
+    "brier": 0.18079950999538347,
+    "ece_15bin": 0.03389427174935497,
+    "interaction_count": 153067,
+    "nll": 0.5376818251252256,
+    "positive_count": 57547
+  },
+  "optimizer_reused": false,
+  "parameters": 4222884,
+  "predictions": {
+    "bytes": 590990,
+    "path": "/home/lpq/a2g_mambakt/independent_trainfold_20260907_v2_172/artifacts/assist2017/seed42/full/validation_predictions.npz",
+    "sha256": "ef96843a1287d37549474ef356cd3fe56739e23b4b7f8f1784df1784edca35eb"
+  },
+  "pretrained_checkpoint": null,
+  "seed": 42,
+  "status": "complete_independent_random_init_validation",
+  "test_access": false,
+  "trainable_parameters": 4222884,
+  "validation_schedule": {
+    "batch_count": 8,
+    "batch_size": 128,
+    "epoch": 0,
+    "order": "fixed_csv_filtered_order",
+    "schedule_sha256": "c207f2d4692281f89e063c71fcafc9af6a4a763525daf641afb2bdc6944e1c74",
+    "schema_version": 1,
+    "seed": 42,
+    "state_carry_between_segments": false
+  },
+  "variant": "full",
+  "window_test_access": false
+}

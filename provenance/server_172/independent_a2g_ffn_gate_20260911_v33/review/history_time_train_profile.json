@@ -1,0 +1,35 @@
+{
+  "counts": {
+    "float32_epoch_subtraction_changes_gap": 597719,
+    "float32_epoch_subtraction_loses_positive_gap": 468348,
+    "positive_history_gap": 597720,
+    "scored_targets": 606414,
+    "targets_with_two_predecessors": 602832,
+    "training_rows": 3582,
+    "validation_rows_skipped": 905,
+    "zero_history_gap": 5112
+  },
+  "feature_normalization_fitted": false,
+  "full_goal_complete": false,
+  "gap_seconds_quantiles": {
+    "max": 20047469.0,
+    "median": 12.0,
+    "min": 0.0,
+    "q25": 5.0,
+    "q75": 32.0,
+    "q95": 133.0
+  },
+  "gpu_used": false,
+  "limitations": "Descriptive metadata only; no training, predictive effect or generalization is established.",
+  "model_fitting": false,
+  "prediction_metrics_computed": false,
+  "response_tokens_parsed": false,
+  "scored_target_coverage_rule": "target t>=2 uses only timestamps[t-1] and timestamps[t-2]",
+  "script_sha256": "2f0294a26fd319d52d8b5adbec21f4d70b9369606047e7de3a5dc14c47227fac",
+  "source": "/home/lpq/a2g_mambakt/train_fold_vocab_five_20260907_v1_172/assist2017/train_valid_sequences.csv",
+  "source_sha256": "2fa792134739275c7e27db0d91f2200d9669e6691480ac28e53d2d2f9c614861",
+  "status": "train_only_history_time_profile_complete",
+  "test_access": false,
+  "training_learners": 1093,
+  "validation_tokens_parsed": false
+}

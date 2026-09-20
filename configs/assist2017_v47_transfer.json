@@ -1,0 +1,73 @@
+{
+  "dataset": "assist2017",
+  "architecture": "v47_transfer",
+  "seed": 42,
+  "train_folds": [1, 2, 3, 4],
+  "validation_folds": [0],
+  "test_access": false,
+  "data": {
+    "num_c": 96,
+    "num_q": 3109,
+    "maxlen": 200,
+    "input_type": ["questions", "concepts"]
+  },
+  "data_binding": {
+    "csv_sha256": "2fa792134739275c7e27db0d91f2200d9669e6691480ac28e53d2d2f9c614861",
+    "mapping_sha256": "7f8122704d9dea7ad06a19e85a951fae26579ba8d296b4285db4d64bc2eb2ebf",
+    "counts": {
+      "train": {
+        "segments": 3582,
+        "learners": 1093,
+        "scored_interactions": 606414
+      },
+      "validation": {
+        "segments": 905,
+        "learners": 274,
+        "scored_interactions": 153067
+      }
+    }
+  },
+  "model": {
+    "d_model": 256,
+    "d_ff": 512,
+    "n_blocks": 4,
+    "num_attn_heads": 8,
+    "dropout": 0.2,
+    "seq_len": 200,
+    "prior_scale": 0.08,
+    "stat_scale": 0.12,
+    "input_decay_scale": 0.5,
+    "boundary_local_floor": 0.5,
+    "normalization_topology": "full_postnorm",
+    "support_smoothing": 24.0,
+    "item_residual_dropout": 0.4,
+    "item_residual_dropout_schedule": "constant",
+    "use_split_boundary": 1,
+    "use_evidence_equivalent_residual": 1,
+    "use_recency_weighted_concept_evidence": 1,
+    "use_factorized_input": 1,
+    "use_item_attempt_stage": 1,
+    "use_history_pace": 1,
+    "use_prequential_newton": 1,
+    "use_concept_graph": 1,
+    "use_ffn_gate": 1,
+    "use_input_memory": 1,
+    "use_multimode_residual": 1,
+    "use_shared_embeddings": 1,
+    "graph_checkpoint_steps": 16,
+    "use_transfer_residual": 1
+  },
+  "training": {
+    "batch_size": 64,
+    "evaluation_batch_size": 128,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "max_epochs": 200,
+    "patience": 20,
+    "optimizer": "adamw",
+    "shuffle": true,
+    "warmup_epochs": 3
+  },
+  "training_protocol": "assist2017_fold0_seed42_batch64_v47_v1"
+}
+

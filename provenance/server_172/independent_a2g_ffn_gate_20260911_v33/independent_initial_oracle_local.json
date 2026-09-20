@@ -1,0 +1,48 @@
+{
+  "all_new_parameters_zero_initialized": true,
+  "all_state_tensors_match_v32": false,
+  "auditor_source_sha256": "a90499021775bea9b3094822ad98e42de46a9b1acf358660be08643eeed03ef0",
+  "candidate_id": "a2g_v32_input_gated_ffn_20260911_v33",
+  "candidate_sha256": "3c80a24b2c4f42991e638c8740378f60fc545369fce91bc2e4f2c61101c544c7",
+  "common_tensors_exact_match": true,
+  "created_utc": "2026-09-11T03:45:53.108307+00:00",
+  "expected_new_initial_tensor_sha256": {
+    "blocks.0.ffn.gate_bias": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "blocks.0.ffn.gate_weight": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541",
+    "blocks.1.ffn.gate_bias": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "blocks.1.ffn.gate_weight": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541",
+    "blocks.2.ffn.gate_bias": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "blocks.2.ffn.gate_weight": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541"
+  },
+  "gpu_used": false,
+  "independent_oracle_imported_candidate": false,
+  "new_initial_parameters_match_independent_seed42": true,
+  "new_initial_tensor_sha256": {
+    "blocks.0.ffn.gate_bias": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "blocks.0.ffn.gate_weight": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541",
+    "blocks.1.ffn.gate_bias": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "blocks.1.ffn.gate_weight": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541",
+    "blocks.2.ffn.gate_bias": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+    "blocks.2.ffn.gate_weight": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541"
+  },
+  "new_initialization_consumes_rng": false,
+  "new_parameter_names": [
+    "blocks.0.ffn.gate_bias",
+    "blocks.0.ffn.gate_weight",
+    "blocks.1.ffn.gate_bias",
+    "blocks.1.ffn.gate_weight",
+    "blocks.2.ffn.gate_bias",
+    "blocks.2.ffn.gate_weight"
+  ],
+  "new_parameters": 394752,
+  "parent_manifest_sha256": "f197bc4f25942db625953b920f953ca68e26a6234aba78fb83770b85b17e396b",
+  "real_data_access": false,
+  "scope": "Fresh random initializers without data priors; remote production preflight separately checks empirical priors and the persisted V32 random initial state.",
+  "shared_tensors": 105,
+  "status": "pass",
+  "torch": "2.4.0+cpu",
+  "trained_weights_read": false,
+  "training_started": false,
+  "verification_script_sha256": "d4ffa08cbcb57a382c3c3cd6e9dddd7d9d48849aec363e7c7f8d43de36bba79d",
+  "whole_initial_file_hash_equality_required": false
+}

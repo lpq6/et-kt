@@ -1,0 +1,18 @@
+{
+  "gpu_used": false,
+  "model_changed": false,
+  "protocol_changed": false,
+  "raw_data_copied": false,
+  "reason": "The first dependency stage contained model/review sources but not runtime vocabulary-summary and baseline metadata.",
+  "script_sha256": "52ed28520651722f46b12050e68264d30c452fad2d4d1c015e7348da7bb37f50",
+  "source_manifest_sha256": "f197bc4f25942db625953b920f953ca68e26a6234aba78fb83770b85b17e396b",
+  "status": "unchanged_v32_metadata_staged_before_freeze",
+  "training_started": false,
+  "unchanged_sha256": {
+    "incumbent_result.json": "0d81fc86765c356f35d8320133ad84f86ac31b74c6d28bc2cced1dca4ed1fcf4",
+    "reference_snapshot.json": "e1e2a639a4475920f20da67e856615a23c8c85e4558efb839c5d540aaefcb931",
+    "references/baseline_table.csv": "ebbf935ed01adc381833a6422e8b9fe03d04dbffa5c217bee1e98f3fb6f65d88",
+    "references/baseline_table.md": "8a5de11ae11e631a0565e090bde93871a3680caff4795e99e1ac9ebe64ab64b0",
+    "trainfold_data_summary.json": "31f65a7d78c15167bacdd893cab5d792460ddf0c590234cc6538c150b6ac4432"
+  }
+}

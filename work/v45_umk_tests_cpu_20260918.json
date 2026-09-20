@@ -1,0 +1,65 @@
+{
+  "successful": true,
+  "tests": 87,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [
+    {
+      "test": "test_cuda_graph_outputs_and_gradients_exact (test_low_memory.LowMemoryTests)",
+      "reason": "CUDA unavailable"
+    },
+    {
+      "test": "test_cuda_forward_backward_finite (test_model.ModelTests)",
+      "reason": "CUDA unavailable"
+    }
+  ],
+  "duration_seconds": 68.9059999999954,
+  "python": "3.10.18",
+  "source": {
+    "__init__.py": "671e4611c861f136f19341b25920f32fc207122cd0a5d3c134880c799c4a6280",
+    "_initialization.py": "c2a878e7f6c6c0c95e96eff6ffce0690c5573e30b3b4058f5925be6e6d287c1d",
+    "aligned_history.py": "d5516535f35aee5285b3cd30ef63aaa6cd86c9c4df50240d727c890c2b83c55b",
+    "candidate.py": "b3e3ec3fdf865df7a22f30252d3d61634074b16db5fbaecec3ba2991fc470235",
+    "data.py": "70e081234adf92a3d46d6f34657f2ceb9c0211c2db68401e874fbc35a1988833",
+    "experiment.py": "582fa321f6394e9c7e3ce4f74369b0b29e52e7a8391e061cc970230d04a13578",
+    "metrics.py": "ffe1cf3671a45258bc300ecc86ede2efbf42981d0741437e27ea711b1217c447",
+    "model.py": "90ce9f41fc3af806b240a80416d822b7f54f20dd452fbbdc14e5bbbd55274022",
+    "modules/__init__.py": "9f64af7a9dbf62afff6bfa2fe330a2d18d3a7b9c167dc2ac5d4bf14266688a09",
+    "modules/attempt.py": "5c3598526efef3566a28cdf10e8706d528f95a4118d4aa9d86fef6988aba44f4",
+    "modules/core.py": "c4bc64f2dc86a967e44ce39130f8c8074f331e0fc56b506c85b4be0d5bfe2913",
+    "modules/evidence.py": "a26f974d4bee560e48b7713f39d4bee0a2f66aa22a16b6d0f06fac075cb4a84f",
+    "modules/ffn.py": "9e865a024ffdcc03b3fe3e376307d4216a09497392b9f3c67064257da70dfc1e",
+    "modules/graph.py": "9efc7b1a85f19966ce8e9f0464d9cd6a6c176606936b5e87efe60831b8ce3351",
+    "modules/input_memory.py": "333edd513819c3f79bee86f2c7d33d59aa23100d7ed59af694e57d0ce18ffe48",
+    "modules/modal.py": "113b11ace0c8d70ff6e39b8c023cf0cc2527a8658b6068ff480f2477ef3f2b66",
+    "modules/newton.py": "8c75d6bc75c7eebae8be7eccd6fd91d582ed5daf42915c50b8a4f711604177b8",
+    "modules/pace.py": "a5bdee9ecb06319bec464a6aaca86eddd969df45f4e0292c129abcc4909d4f7c",
+    "modules/umk.py": "6e6e2b9dbbeac798037d5f68c90d65d3f33038c9604a058923b033e8182d08cb",
+    "protocol.py": "fb6c2faf06fe8e45ce96bace028800518dd991936bb566dc1049903be1393ab8",
+    "provenance.py": "f456b1ca35fd4026254543af45f2e600d250e3883b33d1fa58572ec5fc6e251b",
+    "randomness.py": "f243e538d2228f9beb6c089a4f45e332be5ef40463f182a7119e59f2ffba6128",
+    "uid.py": "ac03a18e63b66c587519e6ca4cd67fcd9630f015379665b94e7e6c05a2689761",
+    "umk.py": "7cddeed43204dc62c2b651723acfa73c9edb1df25729b4fdcf02075a01cb8436"
+  },
+  "test_source": {
+    "test_aligned_history.py": "6dd993dba348aad796548ed15def682c1bc187d4a2d9ef674e36135bc7141ad1",
+    "test_audit_protocol.py": "44c54008c1739a3a9aba07c2d5960da89f959836cd43c6d1b394ef9ce9f70d07",
+    "test_candidate.py": "335d917943adddef473c139a4d2a57e4ed860887f9d2e0b0bedea6e0773857cf",
+    "test_data.py": "3e7c96991dd2283b8e82311dcc0edf8b568aff49fd11cef0c9439f31b018610c",
+    "test_history_profile.py": "9c0826dbeae0007991e9906768eb2dbbdd6905a6f0e0477736d69eed7a60973d",
+    "test_logged_process.py": "2ef5f20badfd75b74235be156679bad3adb2ab34eec21ae51117b8ace16bfffd",
+    "test_low_memory.py": "91e4941a68e98e79d3b56e4eba885d6bc1378b3e66d0b2ec1297f7654dc6c93b",
+    "test_metrics.py": "0179314f67e3241d96161f62c3ce28392908f7856ec11e19a7441168a13efc9b",
+    "test_model.py": "96da971dec447fb94059ac68cf908d789565cf30585aba95931185b61ee882f4",
+    "test_no_item_data.py": "6f76f0bd21779f87a2c1c3f49ea83379eb00620be76f5a789102face2ac20713",
+    "test_reevaluation_entrypoint.py": "c3e7550f20d34737ba6e1ee4e73835bdb674e7c2eec31d5f9d179717b9ba4e42",
+    "test_run_tests_report.py": "8fcfcb4e0495da2e0bb77ce9023cc62ffe29e5e968131d70f9f45d6e154bb099",
+    "test_terminal_local.py": "d49e19e66087400582500b49a7f077c5f22cef4538e722f7c8c6ed25e8ea5911",
+    "test_training_protocol.py": "953b4116760aac920935b41325d5a4ee37f239fe1a23acf1932ffa6e928d57a2",
+    "test_umk.py": "78ab5d8e8b6e1f0304521bf20ea6bb7505566467a5f3b4595f745463ef530328",
+    "test_v43_controls.py": "975a5d3eddfeb41ca7a0ff91e7c0e7939e44514e0ce89eca41ad67ad4ec84bfa",
+    "test_validation_diagnostics.py": "e8ff92842f73aed95d4d964755bd20894c2e0af6bdb4c73be40bb3cd24cd009d",
+    "test_version_bundles.py": "61dac8a27d49cd30d099e2b38d797b82a5d1d284f162a7ceee4db213400b30cb"
+  },
+  "output": "test_all_statistics_match_an_unshifted_prefix_oracle (test_aligned_history.AlignedHistoryTests) ... ok\ntest_configuration_changes_only_architecture_and_control_is_explicit (test_aligned_history.AlignedHistoryTests) ... ok\ntest_current_and_future_responses_do_not_affect_current_prediction (test_aligned_history.AlignedHistoryTests) ... ok\ntest_disabled_candidate_matches_parent_three_training_steps (test_aligned_history.AlignedHistoryTests) ... ok\ntest_enabled_candidate_changes_predictions_with_finite_gradients (test_aligned_history.AlignedHistoryTests) ... ok\ntest_initial_state_and_rng_equal_parent_without_new_parameters (test_aligned_history.AlignedHistoryTests) ... ok\ntest_legacy_excludes_latest_observation_but_candidate_includes_it (test_aligned_history.AlignedHistoryTests) ... ok\ntest_no_evidence_removes_the_alignment_effect (test_aligned_history.AlignedHistoryTests) ... ok\ntest_complete_early_stop_is_accepted (test_audit_protocol.IndependentAuditTests) ... ok\ntest_independent_all_metrics_equal_training_scorer (test_audit_protocol.IndependentAuditTests) ... ok\ntest_invalid_epoch_coverage_and_history_are_rejected (test_audit_protocol.IndependentAuditTests) ... ok\ntest_mask_holes_and_learner_overlap_fail (test_audit_protocol.IndependentAuditTests) ... ok\ntest_must_stop_at_first_patience_boundary (test_audit_protocol.IndependentAuditTests) ... ok\ntest_original_csv_row_and_position_order (test_audit_protocol.IndependentAuditTests) ... ok\ntest_premature_stop_is_rejected (test_audit_protocol.IndependentAuditTests) ... ok\ntest_rejects_key_or_label_mismatch (test_audit_protocol.IndependentAuditTests) ... ok\ntest_activated_candidate_matches_server_and_is_causal (test_candidate.CandidateTests) ... ok\ntest_disabled_candidate_equals_reference (test_candidate.CandidateTests) ... ok\ntest_input_memory_never_reads_current_or_future_projection (test_candidate.CandidateTests) ... ok\ntest_v43_state_and_initial_predictions_match_server (test_candidate.CandidateTests) ... ok\ntest_both_production_configs_validate (test_data.DataTests) ... ok\ntest_learner_fold_overlap_fails (test_data.DataTests) ... ok\ntest_mixed_fold_and_test_files_fail (test_data.DataTests) ... ok\ntest_oov_in_training_fails (test_data.DataTests) ... ok\ntest_prior_uses_only_shifted_training_targets (test_data.DataTests) ... ok\ntest_shift_masks_reserved_ids_and_counts (test_data.DataTests) ... ok\ntest_training_prefix_counts_and_validation_labels_are_not_parsed (test_history_profile.HistoryProfileTests) ... ok\ntest_launch_failure_is_persisted (test_logged_process.LoggedProcessTests) ... ok\ntest_output_is_durable_and_does_not_require_a_reader (test_logged_process.LoggedProcessTests) ... ok\ntest_bad_checkpoint_size_is_rejected (test_low_memory.LowMemoryTests) ... ok\ntest_cuda_graph_outputs_and_gradients_exact (test_low_memory.LowMemoryTests) ... skipped 'CUDA unavailable'\ntest_initial_state_and_rng_unchanged (test_low_memory.LowMemoryTests) ... ok\ntest_three_activated_training_steps_match (test_low_memory.LowMemoryTests) ... ok\ntest_floor_is_strict_without_rounding (test_metrics.MetricsTests) ... ok\ntest_invalid_metrics_fail_closed (test_metrics.MetricsTests) ... ok\ntest_known_auc (test_metrics.MetricsTests) ... ok\ntest_server_clipping_precedes_auc (test_metrics.MetricsTests) ... ok\ntest_ties_and_endpoints (test_metrics.MetricsTests) ... ok\ntest_active_eval_and_each_ablation_equal_server (test_model.ModelTests) ... ok\ntest_aligned_train_gradients_equal_server (test_model.ModelTests) ... ok\ntest_cuda_forward_backward_finite (test_model.ModelTests) ... skipped 'CUDA unavailable'\ntest_current_and_future_answers_do_not_leak (test_model.ModelTests) ... ok\ntest_reload_and_batch_isolation (test_model.ModelTests) ... ok\ntest_state_and_seed_stream_exact (test_model.ModelTests) ... ok\ntest_concept_only_pipeline_has_finite_training_gradients (test_no_item_data.NoItemDataTests) ... ok\ntest_item_attempt_is_provably_inactive_without_question_ids (test_no_item_data.NoItemDataTests) ... ok\ntest_frozen_source_dispatch_reaches_the_artifact_audit (test_reevaluation_entrypoint.ReevaluationEntrypointTests) ... ok\ntest_cpu_report_is_written_after_skipped_tests (test_run_tests_report.RunTestsReportTests) ... ok\ntest_skipped_tests_are_json_serializable (test_run_tests_report.RunTestsReportTests) ... ok\ntest_changed_command_configuration_is_rejected (test_terminal_local.TerminalLocalTests) ... ok\ntest_independent_evidence_is_accepted_only_with_artifact_bindings (test_terminal_local.TerminalLocalTests) ... ok\ntest_running_failed_and_wrong_commands_are_rejected (test_terminal_local.TerminalLocalTests) ... ok\ntest_smoke_or_mismatched_initialization_evidence_is_rejected (test_terminal_local.TerminalLocalTests) ... ok\ntest_successful_exit_is_bound_to_the_actual_run (test_terminal_local.TerminalLocalTests) ... ok\ntest_batch_change_without_explicit_protocol_is_rejected (test_training_protocol.TrainingProtocolTests) ... ok\ntest_each_epoch_records_the_actual_optimizer_step_count (test_training_protocol.TrainingProtocolTests) ... ok\ntest_historical_batch64_run_keeps_its_original_contract (test_training_protocol.TrainingProtocolTests) ... ok\ntest_missing_and_unknown_protocol_are_rejected_for_batch256 (test_training_protocol.TrainingProtocolTests) ... ok\ntest_optimizer_stopping_and_execution_drift_are_rejected (test_training_protocol.TrainingProtocolTests) ... ok\ntest_reference_and_explicit_batch256_are_distinct (test_training_protocol.TrainingProtocolTests) ... ok\ntest_attention_bias_masks_missing_history_and_keeps_empty_rows_finite (test_umk.UMKTests) ... ok\ntest_attention_supports_every_existing_normalization_topology (test_umk.UMKTests) ... ok\ntest_current_and_future_labels_timestamps_and_concepts_do_not_leak (test_umk.UMKTests) ... ok\ntest_disabled_state_rng_and_training_are_exactly_v43 (test_umk.UMKTests) ... ok\ntest_enabled_additions_are_only_two_scalar_parameters (test_umk.UMKTests) ... ok\ntest_last_seen_is_concept_relative_and_strictly_past (test_umk.UMKTests) ... ok\ntest_rate_formula_and_dtype (test_umk.UMKTests) ... ok\ntest_rwce_matches_unshifted_history_oracle_in_float64 (test_umk.UMKTests) ... ok\ntest_selective_retention_matches_manual_recurrence (test_umk.UMKTests) ... ok\ntest_single_switches_and_joint_model_have_finite_double_gradients (test_umk.UMKTests) ... ok\ntest_ssm_wrappers_preserve_prior_and_scalar_in_all_routes (test_umk.UMKTests) ... ok\ntest_v45_configs_keep_the_fixed_training_contract (test_umk.UMKTests) ... ok\ntest_controls_regenerate_the_identical_full_initial_state (test_v43_controls.V43ControlTests) ... ok\ntest_each_control_removes_only_its_own_active_effect_and_gradient (test_v43_controls.V43ControlTests) ... ok\ntest_ssm_control_still_removes_both_nested_memory_paths (test_v43_controls.V43ControlTests) ... ok\ntest_v33_rejects_v43_only_control_names (test_v43_controls.V43ControlTests) ... ok\ntest_aggregates_partition_population_without_inventing_single_class_auc (test_validation_diagnostics.ValidationDiagnosticTests) ... ok\ntest_current_response_does_not_enter_its_own_features (test_validation_diagnostics.ValidationDiagnosticTests) ... ok\ntest_fold_overlap_is_rejected (test_validation_diagnostics.ValidationDiagnosticTests) ... ok\ntest_history_is_strict_and_resets_at_each_segment (test_validation_diagnostics.ValidationDiagnosticTests) ... ok\ntest_support_matches_scored_training_targets_and_not_validation_counts (test_validation_diagnostics.ValidationDiagnosticTests) ... ok\ntest_all_versions_are_complete_and_hash_verified (test_version_bundles.VersionBundleTests) ... ok\ntest_cross_version_config_is_rejected_before_training (test_version_bundles.VersionBundleTests) ... ok\ntest_existing_version_is_never_overwritten (test_version_bundles.VersionBundleTests) ... ok\ntest_model_files_are_physical_copies_not_shared_links (test_version_bundles.VersionBundleTests) ... ok\ntest_mutation_and_added_code_are_rejected_before_execution (test_version_bundles.VersionBundleTests) ... ok\ntest_relocated_versions_import_only_their_own_code_and_match (test_version_bundles.VersionBundleTests) ... ok\n\n----------------------------------------------------------------------\nRan 87 tests in 68.912s\n\nOK (skipped=2)\n"
+}

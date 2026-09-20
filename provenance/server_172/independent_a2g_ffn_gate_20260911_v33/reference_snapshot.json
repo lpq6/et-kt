@@ -1,0 +1,142 @@
+{
+  "baseline_training": false,
+  "csv_rows": 60,
+  "datasets": {
+    "assist2009_corrected_collapsed": {
+      "csv_max_auc_mean": 0.848004,
+      "csv_max_model": "ukt",
+      "csv_models": [
+        "acekt",
+        "akt",
+        "dkt",
+        "dkt+",
+        "sakt",
+        "simplekt",
+        "ukt"
+      ],
+      "reference_floor": 0.8566249815040318,
+      "strict_floor_not_lowered": true
+    },
+    "assist2012": {
+      "csv_max_auc_mean": 0.779282,
+      "csv_max_model": "akt",
+      "csv_models": [
+        "akt",
+        "dkt",
+        "dkt+",
+        "sakt",
+        "simplekt"
+      ],
+      "reference_floor": 0.779282,
+      "strict_floor_not_lowered": true
+    },
+    "assist2015": {
+      "csv_max_auc_mean": 0.728353,
+      "csv_max_model": "dkt+",
+      "csv_models": [
+        "acekt",
+        "akt",
+        "dkt",
+        "dkt+",
+        "sakt",
+        "simplekt",
+        "ukt"
+      ],
+      "reference_floor": 0.7337756158427048,
+      "strict_floor_not_lowered": true
+    },
+    "assist2017": {
+      "csv_max_auc_mean": 0.78203,
+      "csv_max_model": "acekt",
+      "csv_models": [
+        "acekt",
+        "akt",
+        "dkt",
+        "dkt+",
+        "sakt",
+        "simplekt",
+        "ukt"
+      ],
+      "reference_floor": 0.8174,
+      "strict_floor_not_lowered": true
+    },
+    "junyi2015": {
+      "csv_max_auc_mean": 0.804888,
+      "csv_max_model": "ukt",
+      "csv_models": [
+        "akt",
+        "dkt",
+        "dkt+",
+        "sakt",
+        "simplekt",
+        "ukt"
+      ],
+      "reference_floor": 0.804888,
+      "strict_floor_not_lowered": true
+    },
+    "nips_task34": {
+      "csv_max_auc_mean": 0.807984,
+      "csv_max_model": "cskt",
+      "csv_models": [
+        "acekt",
+        "akt",
+        "asikt_author",
+        "bkt",
+        "cskt",
+        "deep_irt",
+        "dkt",
+        "dkt+",
+        "dkvmn",
+        "dtransformer",
+        "fluckt",
+        "folibikt",
+        "qikt",
+        "sakt",
+        "simplekt",
+        "ukt"
+      ],
+      "reference_floor": 0.8273,
+      "strict_floor_not_lowered": true
+    },
+    "slepemapy": {
+      "csv_max_auc_mean": 0.8001629519148421,
+      "csv_max_model": "akt",
+      "csv_models": [
+        "akt",
+        "dkt",
+        "dkt+",
+        "sakt",
+        "simplekt"
+      ],
+      "reference_floor": 0.800163,
+      "strict_floor_not_lowered": true
+    },
+    "statics2011": {
+      "csv_max_auc_mean": 0.82768,
+      "csv_max_model": "akt",
+      "csv_models": [
+        "acekt",
+        "akt",
+        "dkt",
+        "dkt+",
+        "sakt",
+        "simplekt",
+        "ukt"
+      ],
+      "reference_floor": 0.8293542042910951,
+      "strict_floor_not_lowered": true
+    }
+  },
+  "limitations": [
+    "CSV rows were parsed with csv.DictReader; the Markdown source is retained byte-for-byte.",
+    "Canonical Markdown tables were inspected, but this is not an exhaustive audit of every underlying baseline artifact.",
+    "Five-fold and paper-only scores are descriptive numeric targets, not matched single-fold baseline experiments."
+  ],
+  "paper_goal_complete": false,
+  "sources": {
+    "csv_sha256": "ebbf935ed01adc381833a6422e8b9fe03d04dbffa5c217bee1e98f3fb6f65d88",
+    "floor_policy": "all eight v15 conservative floors retained without reduction",
+    "markdown_sha256": "8a5de11ae11e631a0565e090bde93871a3680caff4795e99e1ac9ebe64ab64b0"
+  },
+  "status": "eight_reference_floors_preserved_and_csv_checked"
+}

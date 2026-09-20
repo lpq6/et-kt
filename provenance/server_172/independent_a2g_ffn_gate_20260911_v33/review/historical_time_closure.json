@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "closed_before_launch_not_aligned_with_primary_5_of_5_objective",
+  "generated_at": "2026-08-30T02:17:00+08:00",
+  "candidate_id": "causal_elapsed_time_adapter_assist2017_v1",
+  "remote_root": "/home/lpq/a2g_mambakt/causal_elapsed_time_adapter_assist2017_screen_20260830_v1_172",
+  "scientific_reason": "The timestamp observable is available for Assist2017 but not for the full five-dataset positive set, so this dataset-specific adapter cannot support a mechanically identical module Full-minus-ablation 5/5 claim.",
+  "primary_objective": {
+    "full_model": "fold0/seed42 validation-only AUC above all admitted baselines on at least 5/8 datasets",
+    "module": "the same internal module must have Full-minus-ablation delta AUC > 0.001 and delta ACC >= -0.0005 on all five primary Full-positive datasets",
+    "objective_achieved": false,
+    "quality_freeze": false
+  },
+  "prepared_evidence": {
+    "candidate_sha256": "0b18333fa1e0bcd51f968e7e866628f34b82cc8768469c780fc3390aa875ec41",
+    "trainer_sha256": "14c6afdb858610ce676c4cfed5d56745e0597038e364b1fb5acb6762fe83a3ed",
+    "launcher_sha256": "36af943034d796e4a1364b391209e9beb1f769de0a9214c29b51a42b5430b5a0",
+    "launch_gate_sha256": "6899ff20fba0dd093f6b2ffc217875b46ebf1f1b6960e7355cddeea7165ca748",
+    "static_audit": "pass",
+    "cpu_contract": "pass",
+    "cuda_hidden_no_data_preflight": "pass"
+  },
+  "runtime_closure": {
+    "last_idle_waiter_pid": 619242,
+    "last_idle_waiter_pgid": 619242,
+    "idle_waiter_stopped": true,
+    "execution_started": false,
+    "candidate_queue_pid": null,
+    "candidate_watchdog_pid": null,
+    "candidate_compute_pid": null,
+    "result_json": false,
+    "resource_json": false,
+    "signals_sent_to_external": false,
+    "external_compute_pid_observed": 500792
+  },
+  "decision": {
+    "gpu_launch_authorized": false,
+    "retry": false,
+    "grid": false,
+    "cross_dataset_expansion": false,
+    "preserve_root_for_provenance": true,
+    "next_candidate_requirement": "mechanically identical q/c/r causal module available on all five primary Full-positive datasets"
+  }
+}

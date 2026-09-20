@@ -1,0 +1,32 @@
+{
+  "candidate_id": "a2g_v28_directed_concept_graph_20260911_v32",
+  "cross_host_differences_preserved": [
+    "concept_graph.cell.bias_hh",
+    "concept_graph.cell.bias_ih",
+    "concept_graph.cell.weight_hh",
+    "concept_graph.cell.weight_ih",
+    "concept_graph.state_projection.weight"
+  ],
+  "evidence_sha256": {
+    "assist2017/seed42/concept_graph_control_audit.json": "cc6abdf538b5e290fd5013f7d94cd0ecd7a4998816fe652c75aa1f8d1b85a6af",
+    "assist2017/seed42/full/result.json": "bd0c22f0ee26eb79ac67d482cc1709772849268d6901e6de7d7949a4c3d549dc",
+    "assist2017/seed42/provenance.json": "0d813f7fbb1c16bc9b0b8c70da49ce13941cd097450131e01e1930b72cfb944b",
+    "independent_initial_oracle_local.json": "d2180c6d3488e71d01f08080dfd60e2e2c353320021c337bb587cf3133429ae3",
+    "production_cpu_audit_assist2017.json": "cf56364bc49faf3f6aeab03623e87d8b3947d8b25dffcd5ae6e2eaedaadbe247",
+    "remote_initialization_review.json": "eb69a8be6af18b3773925797eec19991b2a6305d1c873400c6546a9980ad8ed2"
+  },
+  "full_goal_complete": false,
+  "gpu_used": false,
+  "initial_parity_fields_verified": 12,
+  "initial_state_deserialized": false,
+  "initial_state_sha256": "010881c273cef6447bb42941d2bb06b3555093ab6012ab2ad15f61c446117cfa",
+  "manifest_sha256": "f197bc4f25942db625953b920f953ca68e26a6234aba78fb83770b85b17e396b",
+  "new_initial_tensors": 10,
+  "remote_independent_reconstruction_matches": true,
+  "shared_initial_tensors": 95,
+  "status": "verified_live_review_matches_terminal_initialization",
+  "strict_cross_host_hash_check_passed": false,
+  "trained_checkpoint_loaded": false,
+  "training_started": false,
+  "verifier_sha256": "b17d7779b1e74166519ef29ea0a120f8bac74188e2aed3c59893209fa1855221"
+}

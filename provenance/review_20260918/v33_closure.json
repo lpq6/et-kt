@@ -1,0 +1,13 @@
+{
+  "candidate_id": "a2g_v32_input_gated_ffn_20260911_v33",
+  "full_goal_complete": false,
+  "generator_sha256": "ba61d72fa56bd9cfb05884a425f9b337d114722c3afb226f7fad190e9fc024f5",
+  "index_sha256": "63adcc16b2830bc2d2f851514bc3781fd6cc521e6d4c43533047f8bfe3adbd2c",
+  "observed_training_exit_code": 0,
+  "other_datasets_started": false,
+  "previous_index_sha256": "3d019a224894b1dd84722951a6882d83d2910bb4940dcfb286a124c2eb0e51d6",
+  "process_exit_sha256": "619629c7bd35c5fd6741321bfc0943d647a8ee486a19bc10d88c1371afdb2755",
+  "progress_sha256": "792515d0a5aec02d9d21d78635f43aba16c65c3a7378ffeb751a2c3388354ad8",
+  "result_sha256": "52faa100613019888a8bb889d97d16e67ad4d43948cacca620aeeff49dd235a7",
+  "status": "audited_pilot_published_full_goal_unmet"
+}

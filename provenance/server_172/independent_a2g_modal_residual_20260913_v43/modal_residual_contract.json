@@ -1,0 +1,10 @@
+{
+  "gpu_used": false,
+  "optimizer_steps": 0,
+  "output": "test_activated_modal_residual_changes_predictions (test_modal_residual.ModalResidualTests) ... ok\ntest_initial_modal_residual_preserves_v39_outputs_and_gradients (test_modal_residual.ModalResidualTests) ... ok\ntest_long_forward_and_short_backward_are_causal_and_finite (test_modal_residual.ModalResidualTests) ... ok\ntest_modal_disable_restores_v39_with_input_memory_active (test_modal_residual.ModalResidualTests) ... ok\ntest_wrapper_reuses_v39_state_and_disabled_dispatch (test_modal_residual.ModalResidualTests) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 1.363s\n\nOK\n",
+  "source_sha256": "1a80b2f27d0f8a6db0051765e5eb382db1fb8f745deeac56508860462b04b00c",
+  "status": "pass",
+  "tests_run": 5,
+  "tests_sha256": "ed18addfcd0d1db1848e65cf8cd97cacd4b96ec3c8e310937a43241496fd56e4",
+  "training_started": false
+}

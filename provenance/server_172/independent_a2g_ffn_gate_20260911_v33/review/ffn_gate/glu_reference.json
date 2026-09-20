@@ -1,0 +1,37 @@
+{
+  "abstract_page_inspected": true,
+  "capture_script_sha256": "e7e653ebb50ce34bcba30f40a8b9e9568e9a9a3fc0d7ece86ba5ccbdebc6b3fc",
+  "checked_utc": "2026-09-11T02:43:54.114804+00:00",
+  "discovery_note": "The earlier public Atom API query returned Rate exceeded; the primary abstract page was accessible.",
+  "full_text_method_details_verified": false,
+  "gpu_used": false,
+  "http_status": 200,
+  "metadata": {
+    "citation_arxiv_id": [
+      "2002.05202"
+    ],
+    "citation_author": [
+      "Shazeer, Noam"
+    ],
+    "citation_date": [
+      "2020/02/12"
+    ],
+    "citation_online_date": [
+      "2020/02/12"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2002.05202"
+    ],
+    "citation_title": [
+      "GLU Variants Improve Transformer"
+    ]
+  },
+  "not_supported": "No Assist2017 benefit, novelty, exact candidate formula or matched-parameter comparison is established by this reference.",
+  "paper_redistributed": false,
+  "permitted_support": "GLU-family multiplicative feed-forward variants are prior work, not a new literature contribution here.",
+  "resolved_url": "https://arxiv.org/abs/2002.05202v1",
+  "response_sha256": "8f8c4041751685e19c8725fe43aef20ba386600acaddc856673dc5f661a38b91",
+  "status": "primary_arxiv_bibliographic_metadata_verified",
+  "training_started": false,
+  "url": "https://arxiv.org/abs/2002.05202v1"
+}

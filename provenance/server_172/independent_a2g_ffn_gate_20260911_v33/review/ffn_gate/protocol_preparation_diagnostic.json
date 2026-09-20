@@ -1,0 +1,9 @@
+{
+  "status": "pre_write_development_check_corrected",
+  "reason": "The new source-scan report uses bounded_source_review_captured_pending_architecture_decision, not the older pending_design status.",
+  "correction": "Check the exact current bounded-review status without changing the review evidence.",
+  "protocol_written_before_failure": false,
+  "model_modified": false,
+  "training_started": false,
+  "gpu_used": false
+}

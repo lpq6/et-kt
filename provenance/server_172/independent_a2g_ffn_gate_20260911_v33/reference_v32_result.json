@@ -1,0 +1,61 @@
+{
+  "best_epoch": 37,
+  "candidate_id": "a2g_v28_directed_concept_graph_20260911_v32",
+  "checkpoint": {
+    "bytes": 18902006,
+    "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/artifacts/assist2017/seed42/full/selected_model.pt",
+    "sha256": "95c0b223d9ab19bd811e8c07e7a898e544761fc169adb69c2dcd1f332c2f4642"
+  },
+  "checkpoint_selection": "max validation AUC then min NLL, Brier, ECE15 then earliest epoch",
+  "dataset": "assist2017",
+  "duration_seconds": 3841.9160215229494,
+  "epoch_log": {
+    "bytes": 37437,
+    "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/artifacts/assist2017/seed42/full/epochs.jsonl",
+    "sha256": "af7eb44774b1def5d2ce8d469f5cf64640d29ed9931661c9da6e789610cf66af"
+  },
+  "epochs": 57,
+  "flags": {
+    "use_attention_branch": 1,
+    "use_evidence_branch": 1,
+    "use_ssm_branch": 1
+  },
+  "initial_state": {
+    "bytes": 18896583,
+    "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/artifacts/assist2017/seed42/initial_state.pt",
+    "sha256": "010881c273cef6447bb42941d2bb06b3555093ab6012ab2ad15f61c446117cfa"
+  },
+  "metrics": {
+    "acc": 0.7397283542500996,
+    "auc": 0.8011094815652686,
+    "brier": 0.17382010036283596,
+    "ece_15bin": 0.02594941044774851,
+    "interaction_count": 153067,
+    "nll": 0.5208093220483422,
+    "positive_count": 57547
+  },
+  "optimizer_reused": false,
+  "parameters": 4712949,
+  "predictions": {
+    "bytes": 592884,
+    "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/artifacts/assist2017/seed42/full/validation_predictions.npz",
+    "sha256": "25620ad59a70b4805d42214933e6e2910019d362418a7c320bd0202c46524e0b"
+  },
+  "pretrained_checkpoint": null,
+  "seed": 42,
+  "status": "complete_independent_random_init_validation",
+  "test_access": false,
+  "trainable_parameters": 4712949,
+  "validation_schedule": {
+    "batch_count": 8,
+    "batch_size": 128,
+    "epoch": 0,
+    "order": "fixed_csv_filtered_order",
+    "schedule_sha256": "c207f2d4692281f89e063c71fcafc9af6a4a763525daf641afb2bdc6944e1c74",
+    "schema_version": 1,
+    "seed": 42,
+    "state_carry_between_segments": false
+  },
+  "variant": "full",
+  "window_test_access": false
+}

@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Data and outputs (large, not needed in repo)
+data/
+runs/
+candidates/
+versions/
+work/*.log
+work/outputs/
+work/**/*.pt
+work/**/*.pth
+work/**/*.ckpt
+work/**/*.npz
+work/**/*.jsonl
+work/**/epochs.jsonl
+work/**/result.json
+work/**/run.json
+work/asikt_repo/
+work/*.pdf
+*.pt
+*.pth
+*.npz
+
+# OS / IDE
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Cache
+.ruff_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Large files
+*.zip
+*.tar.gz
+*.7z

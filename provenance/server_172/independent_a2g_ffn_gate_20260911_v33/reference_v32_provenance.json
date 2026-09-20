@@ -1,0 +1,388 @@
+{
+  "closed_predecessor_result": {
+    "bytes": 2240,
+    "path": "/home/lpq/a2g_mambakt/independent_a2g_gaussian_overlap_20260911_v31/artifacts/assist2017/seed42/full/result.json",
+    "sha256": "ff79c92fba2147202e62593a29b7e8602fe627b4224c8bbf9355e5bff8852d30"
+  },
+  "cuda": "12.8",
+  "cuda_visible_devices": "1",
+  "data": {
+    "cache_files": [],
+    "cache_policy": "CSV parsed on CPU without reading or writing pickle caches",
+    "counts": {
+      "train": {
+        "learners": 1093,
+        "scored_interactions": 606414,
+        "segments": 3582
+      },
+      "validation": {
+        "learners": 274,
+        "scored_interactions": 153067,
+        "segments": 905
+      }
+    },
+    "data_config": {
+      "bytes": 2937,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/data_config.train_fold_only.json",
+      "sha256": "ae7827cbcabafbcb77fc45fbbd869a5a0eaf53e84895be904d29714d0253887a"
+    },
+    "sequence_csv": {
+      "bytes": 29352927,
+      "path": "/home/lpq/a2g_mambakt/train_fold_vocab_five_20260907_v1_172/assist2017/train_valid_sequences.csv",
+      "sha256": "2fa792134739275c7e27db0d91f2200d9669e6691480ac28e53d2d2f9c614861"
+    },
+    "train_validation_uid_overlap": 0,
+    "training_fold_id_maps": {
+      "bytes": 61749,
+      "path": "/home/lpq/a2g_mambakt/train_fold_vocab_five_20260907_v1_172/assist2017/training_fold_id_maps.json",
+      "sha256": "7f8122704d9dea7ad06a19e85a951fae26579ba8d296b4285db4d64bc2eb2ebf"
+    },
+    "uid_hashes": {
+      "train": "7908f2ed0776fd69e8f65faec006cbc8c2eaf68677128b54dd1b29237e5c789c",
+      "validation": "3d3007e85f8aec1e675c79afa86c7d02d4ccf3e69e50a343209cb9e7f27991a5"
+    },
+    "vocabulary_summary": {
+      "bytes": 15228,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/trainfold_data_summary.json",
+      "sha256": "31f65a7d78c15167bacdd893cab5d792460ddf0c590234cc6538c150b6ac4432"
+    },
+    "vocabulary_training_only_provenance": "hash_bound_training_folds_only"
+  },
+  "dataset": "assist2017",
+  "dataset_progress_before_start": {
+    "assist2017_first_gate": {
+      "expansion_requires_new_frozen_package": true,
+      "independent_terminal_audit_required": true,
+      "other_datasets_executable_in_this_package": false,
+      "strict_auc_floor": 0.8174
+    },
+    "completed_predecessors": [],
+    "order": [
+      "assist2017"
+    ],
+    "other_dataset_execution_authorized": false,
+    "point_failures": 0
+  },
+  "deterministic_algorithms": true,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "imports": {
+    "a2g_dropout_substream_alignment_20260807": {
+      "bytes": 4546,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/a2g_dropout_substream_alignment_20260807.py",
+      "sha256": "406a420224a10b118fdc24c19675bc919b08ac2f616a414baa41b20e3f4b759a"
+    },
+    "a2g_incumbent": {
+      "bytes": 4805,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/a2g_incumbent.py",
+      "sha256": "25150aa675b480661daceaeee3d254645327e642e6bf74a30e2a692ba5a3c1d8"
+    },
+    "a2g_mambakt_final": {
+      "bytes": 5299,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/a2g_mambakt_final.py",
+      "sha256": "509189b84aeb383d712945ab90b5992e0d76359f292df3f9ddfca726993584b9"
+    },
+    "a2g_single_trunk_candidate": {
+      "bytes": 73,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/a2g_single_trunk_candidate.py",
+      "sha256": "047029fd7e1f8e1d7c01b3ce3449abb8625435fc99b74f74a41872b05d8b0c20"
+    },
+    "a2g_uid_topological_loader_20260807": {
+      "bytes": 15104,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/a2g_uid_topological_loader_20260807.py",
+      "sha256": "8ca3b408a8bdc69a43dd833885d4ec636a8d7aef61f8e719c2891d192fca8e20"
+    },
+    "attempt_stage_candidate": {
+      "bytes": 8136,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/attempt_stage_candidate.py",
+      "sha256": "8838f283ad482c05b42ded88ca2d5635daaba42f4d6954cb0587f59d19eeec79"
+    },
+    "concept_graph_candidate": {
+      "bytes": 10078,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/concept_graph_candidate.py",
+      "sha256": "6b3c6f146ff24595f7d2e149bd351bfa041b0452df3005c9582d340d993ee85c"
+    },
+    "factorized_input_candidate": {
+      "bytes": 5662,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/factorized_input_candidate.py",
+      "sha256": "0af6dbb5dd18af006f116c285b1f31c03972f15cbe282017ebe2bfd8971b3667"
+    },
+    "gpu_guard": {
+      "bytes": 6124,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/gpu_guard.py",
+      "sha256": "3ae1226cf61851f1df3934a2438ca5d6ed7a4ff68e189467107fba6c9143bd2b"
+    },
+    "history_pace_candidate": {
+      "bytes": 6880,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/history_pace_candidate.py",
+      "sha256": "6c77f6b9349d3f964a89d1bd66b839718cba72a587589db743c7960048e125c7"
+    },
+    "launch_candidate": {
+      "bytes": 9632,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/launch_candidate.py",
+      "sha256": "36ce98712b932ea7d82bc9e5a30c8b43df844f39662fd796f09e08c9bc3a2eef"
+    },
+    "prequential_newton_candidate": {
+      "bytes": 8855,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/prequential_newton_candidate.py",
+      "sha256": "41e37f9ece6b609ca49d7b4f52c4cd99411134eb3e2e539ef14ea9037264761c"
+    },
+    "work.a2g_mambakt_evidence_equivalent_residual_candidate": {
+      "bytes": 4779,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/work/a2g_mambakt_evidence_equivalent_residual_candidate.py",
+      "sha256": "1cb8e4754fbb719b6edd6746c9e15d62bc7a55eeab6bb8b2190b3e93ec2f993a"
+    },
+    "work.a2g_mambakt_evidence_postnorm_candidate": {
+      "bytes": 1769,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/work/a2g_mambakt_evidence_postnorm_candidate.py",
+      "sha256": "539eee67969270b5779cce802ee9ccb0ec2556ab7e03f3c7ff6fb2d1b1054b00"
+    },
+    "work.a2g_mambakt_joint_weak_stat_prune_candidate": {
+      "bytes": 3340,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/work/a2g_mambakt_joint_weak_stat_prune_candidate.py",
+      "sha256": "39ed5826c5347218c49da03665beaea6176f008ef138546a979703c0ed5f6c44"
+    },
+    "work.a2g_mambakt_joint_weak_stat_prune_physical": {
+      "bytes": 9925,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/work/a2g_mambakt_joint_weak_stat_prune_physical.py",
+      "sha256": "3baa5b662134af0a932092ddb14695a88ba96100329b1e62ef290d35be5d8c95"
+    },
+    "work.a2g_mambakt_one_epoch_concept_novelty_curriculum_candidate": {
+      "bytes": 3357,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/work/a2g_mambakt_one_epoch_concept_novelty_curriculum_candidate.py",
+      "sha256": "1d9e4e50de60040834b2d3367bbfbc22abf0bac45c0239c94db2ed83d6f5c900"
+    },
+    "work.a2g_mambakt_promoted_no_duplicate_folded_bias_20260715": {
+      "bytes": 13134,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/work/a2g_mambakt_promoted_no_duplicate_folded_bias_20260715.py",
+      "sha256": "3ee4e7e476e6a9b055caedc9c0607274c6bfe923e69c2d90921ce2326b1fabee"
+    },
+    "work.a2g_mambakt_recency_weighted_concept_evidence_candidate": {
+      "bytes": 6653,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/sources/work/a2g_mambakt_recency_weighted_concept_evidence_candidate.py",
+      "sha256": "5870d66e798fccb44b907115690c7b806068c2132238e3ad88d03ed4aaa3590e"
+    }
+  },
+  "incumbent_initialization_parity": {
+    "added_tensors": [
+      "attempt_readout.attempt_embedding.weight",
+      "attempt_readout.failure_embedding.weight",
+      "attempt_readout.output.weight",
+      "attempt_readout.run_embedding.weight",
+      "attempt_readout.sequence_norm.bias",
+      "attempt_readout.sequence_norm.weight",
+      "attempt_readout.sequence_projection.weight",
+      "attempt_readout.success_embedding.weight",
+      "attempt_readout.target_norm.bias",
+      "attempt_readout.target_norm.weight",
+      "attempt_readout.target_projection.weight",
+      "concept_graph.cell.bias_hh",
+      "concept_graph.cell.bias_ih",
+      "concept_graph.cell.weight_hh",
+      "concept_graph.cell.weight_ih",
+      "concept_graph.destination_projection.weight",
+      "concept_graph.event_projection.bias",
+      "concept_graph.event_projection.weight",
+      "concept_graph.output.weight",
+      "concept_graph.source_projection.weight",
+      "concept_graph.state_projection.weight",
+      "evidence_stream.0.bias",
+      "evidence_stream.0.weight",
+      "evidence_stream.1.bias",
+      "evidence_stream.1.weight",
+      "factorized_residual.bias",
+      "factorized_residual.weight",
+      "history_pace.scale",
+      "history_pace.shift",
+      "prequential_newton.output_scale",
+      "prequential_newton.projection.weight",
+      "semantic_stream.0.bias",
+      "semantic_stream.0.weight",
+      "semantic_stream.1.bias",
+      "semantic_stream.1.weight"
+    ],
+    "initialization_taken_from_artifact": false,
+    "shared_tensor_count": 70,
+    "source": {
+      "bytes": 16925529,
+      "path": "/home/lpq/a2g_mambakt/independent_trainfold_20260907_v2_172/artifacts/assist2017/seed42/initial_state.pt",
+      "sha256": "c083eacc76d6854bab60329586a375eef9c29ab7ebe9ba93411a84c01abe593f"
+    },
+    "status": "pass",
+    "trained_checkpoint_loaded": false
+  },
+  "initial_gpu_resource_report": {
+    "allowed": true,
+    "checked_at_utc": "2026-09-11T01:04:52.524781+00:00",
+    "current_uid": 1007,
+    "gpus": [
+      {
+        "index": 0,
+        "processes": [
+          {
+            "command": "Xorg",
+            "name": "/usr/lib/xorg/Xorg",
+            "pid": 13877,
+            "type": "G",
+            "uid": 128,
+            "user": "gdm"
+          },
+          {
+            "command": "gnome-shell",
+            "name": "/usr/bin/gnome-shell",
+            "pid": 14046,
+            "type": "G",
+            "uid": 128,
+            "user": "gdm"
+          }
+        ],
+        "uuid": "GPU-3fbf0add-5141-fd29-f904-526a36dcdc93"
+      },
+      {
+        "index": 1,
+        "processes": [
+          {
+            "command": "Xorg",
+            "name": "/usr/lib/xorg/Xorg",
+            "pid": 13877,
+            "type": "G",
+            "uid": 128,
+            "user": "gdm"
+          }
+        ],
+        "uuid": "GPU-e1065296-99f9-bf6e-7898-d6755ca37a9d"
+      }
+    ],
+    "host": "local",
+    "reasons": [],
+    "resource_policy_revision": "v15_resource_r1",
+    "status": "available",
+    "system_graphics_exception_authorized": true,
+    "verified_system_display_processes": [
+      {
+        "command": "Xorg",
+        "gpu": 0,
+        "name": "/usr/lib/xorg/Xorg",
+        "pid": 13877,
+        "type": "G",
+        "uid": 128,
+        "user": "gdm"
+      },
+      {
+        "command": "gnome-shell",
+        "gpu": 0,
+        "name": "/usr/bin/gnome-shell",
+        "pid": 14046,
+        "type": "G",
+        "uid": 128,
+        "user": "gdm"
+      },
+      {
+        "command": "Xorg",
+        "gpu": 1,
+        "name": "/usr/lib/xorg/Xorg",
+        "pid": 13877,
+        "type": "G",
+        "uid": 128,
+        "user": "gdm"
+      }
+    ]
+  },
+  "initial_state": {
+    "bytes": 18896583,
+    "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/artifacts/assist2017/seed42/initial_state.pt",
+    "sha256": "010881c273cef6447bb42941d2bb06b3555093ab6012ab2ad15f61c446117cfa"
+  },
+  "kwargs": {
+    "boundary_local_floor": 0.5,
+    "d_ff": 512,
+    "d_model": 256,
+    "dropout": 0.2,
+    "input_decay_scale": 0.5,
+    "item_residual_dropout": 0.4,
+    "item_residual_dropout_schedule": "constant",
+    "n_blocks": 4,
+    "normalization_topology": "full_postnorm",
+    "num_attn_heads": 8,
+    "prior_scale": 0.08,
+    "seq_len": 200,
+    "stat_scale": 0.12,
+    "support_smoothing": 24.0,
+    "use_concept_graph": 1,
+    "use_evidence_equivalent_residual": 1,
+    "use_factorized_input": 1,
+    "use_history_pace": 1,
+    "use_item_attempt_stage": 1,
+    "use_prequential_newton": 1,
+    "use_recency_weighted_concept_evidence": 1,
+    "use_split_boundary": 1
+  },
+  "manifest": {
+    "bytes": 16274,
+    "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/manifest.json",
+    "sha256": "f197bc4f25942db625953b920f953ca68e26a6234aba78fb83770b85b17e396b"
+  },
+  "numpy": "2.2.6",
+  "prior": {
+    "global_rate": 0.37260866165161133,
+    "scale": 0.18,
+    "selected_interactions": 606414,
+    "smoothing": 24.0,
+    "source": "training_folds_only"
+  },
+  "production_cpu_audit": {
+    "bytes": 9027,
+    "path": "/home/lpq/a2g_mambakt/independent_a2g_concept_graph_20260911_v32/production_cpu_audit_assist2017.json",
+    "sha256": "cf56364bc49faf3f6aeab03623e87d8b3947d8b25dffcd5ae6e2eaedaadbe247"
+  },
+  "python": "3.10.19",
+  "seed": 42,
+  "started_utc": "2026-09-11T01:05:07.147386+00:00",
+  "test_access": false,
+  "torch": "2.10.0+cu128",
+  "v28_initialization_parity": {
+    "all_common_tensors_identical": true,
+    "artifact_used_for_initialization": false,
+    "initial_state": {
+      "bytes": 18732836,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_prequential_newton_20260910_v28/artifacts/assist2017/seed42/initial_state.pt",
+      "sha256": "efe3354089265ddf936e1ee24e366df4833308ac774f6cb10f9a902bd3c6d3c9"
+    },
+    "new_initial_parameters_match_seed42": true,
+    "new_initial_tensor_sha256": {
+      "concept_graph.cell.bias_hh": "6f194bb3c69066b4f5cecf4d057e82527e49c025b4fc7b2f8fe1d617f35a4532",
+      "concept_graph.cell.bias_ih": "8446d401d09afd199b93f8233f481d63b808c73281e3c3d59ac67fdd5aee2e54",
+      "concept_graph.cell.weight_hh": "d7c6eab8174bcbf82eb749a70208470992d71ac3cb4f855245f05acb98a5f4c1",
+      "concept_graph.cell.weight_ih": "8b47b71db4c8a804132b021a5cc78d3e812d9ea7da65f3aa717bcbd4859b025b",
+      "concept_graph.destination_projection.weight": "67684673872a4c838975becb047e67f50eb320c5107a90852f9680dda89b5137",
+      "concept_graph.event_projection.bias": "0db9c48a483331ded469996a3ffe37038e4130af18f33bedbd2ffa60d7b13ac8",
+      "concept_graph.event_projection.weight": "ffdc3b33a491fa51bf7e00b2513f8b37a0ce13baeec5a132cf9f1eea55d2fb1f",
+      "concept_graph.output.weight": "c35020473aed1b4642cd726cad727b63fff2824ad68cedd7ffb73c7cbd890479",
+      "concept_graph.source_projection.weight": "4e556d0ed6816c3a380629d9e3e8618eee844133e17762261ff30e11f2a5d23b",
+      "concept_graph.state_projection.weight": "fcbb3f14184edf3ec0a95b6f272ee927d22308a59e2888def8e6fccb9fd23826"
+    },
+    "new_inner_parameters_standard_initialized": true,
+    "new_output_zero_initialized": true,
+    "new_parameter_count": 40160,
+    "new_tensors": [
+      "concept_graph.cell.bias_hh",
+      "concept_graph.cell.bias_ih",
+      "concept_graph.cell.weight_hh",
+      "concept_graph.cell.weight_ih",
+      "concept_graph.destination_projection.weight",
+      "concept_graph.event_projection.bias",
+      "concept_graph.event_projection.weight",
+      "concept_graph.output.weight",
+      "concept_graph.source_projection.weight",
+      "concept_graph.state_projection.weight"
+    ],
+    "result": {
+      "bytes": 2245,
+      "path": "/home/lpq/a2g_mambakt/independent_a2g_prequential_newton_20260910_v28/artifacts/assist2017/seed42/full/result.json",
+      "sha256": "4fe6a33032324ed7685218938ef1d38f4892d6eaaec78045178ff876ea35a4fa"
+    },
+    "shared_tensors": 95,
+    "status": "pass",
+    "trained_checkpoint_loaded": false
+  },
+  "window_test_access": false
+}

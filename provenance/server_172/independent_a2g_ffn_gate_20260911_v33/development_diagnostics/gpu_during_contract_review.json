@@ -1,0 +1,77 @@
+{
+  "allowed": true,
+  "checked_at_utc": "2026-09-11T03:19:37.216537+00:00",
+  "current_uid": 1007,
+  "gpus": [
+    {
+      "index": 0,
+      "processes": [
+        {
+          "command": "Xorg",
+          "name": "/usr/lib/xorg/Xorg",
+          "pid": 13877,
+          "type": "G",
+          "uid": 128,
+          "user": "gdm"
+        },
+        {
+          "command": "gnome-shell",
+          "name": "/usr/bin/gnome-shell",
+          "pid": 14046,
+          "type": "G",
+          "uid": 128,
+          "user": "gdm"
+        }
+      ],
+      "uuid": "GPU-3fbf0add-5141-fd29-f904-526a36dcdc93"
+    },
+    {
+      "index": 1,
+      "processes": [
+        {
+          "command": "Xorg",
+          "name": "/usr/lib/xorg/Xorg",
+          "pid": 13877,
+          "type": "G",
+          "uid": 128,
+          "user": "gdm"
+        }
+      ],
+      "uuid": "GPU-e1065296-99f9-bf6e-7898-d6755ca37a9d"
+    }
+  ],
+  "host": "lpq@172.25.114.0",
+  "reasons": [],
+  "resource_policy_revision": "v15_resource_r1",
+  "status": "available",
+  "system_graphics_exception_authorized": true,
+  "verified_system_display_processes": [
+    {
+      "command": "Xorg",
+      "gpu": 0,
+      "name": "/usr/lib/xorg/Xorg",
+      "pid": 13877,
+      "type": "G",
+      "uid": 128,
+      "user": "gdm"
+    },
+    {
+      "command": "gnome-shell",
+      "gpu": 0,
+      "name": "/usr/bin/gnome-shell",
+      "pid": 14046,
+      "type": "G",
+      "uid": 128,
+      "user": "gdm"
+    },
+    {
+      "command": "Xorg",
+      "gpu": 1,
+      "name": "/usr/lib/xorg/Xorg",
+      "pid": 13877,
+      "type": "G",
+      "uid": 128,
+      "user": "gdm"
+    }
+  ]
+}

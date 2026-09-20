@@ -1,0 +1,26 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "full_goal_complete": false,
+  "gpu_used": false,
+  "output": "test_existing_attempt_is_never_overwritten_or_retried (test_v33_collection.CollectionGateTests) ... ok\ntest_missing_successful_exit_prevents_any_download (test_v33_collection.CollectionGateTests) ... ok\ntest_complete_inventory_hashes_all_ten_files (test_v33_collection.InventoryTests) ... ok\ntest_extra_artifact_is_rejected (test_v33_collection.InventoryTests) ... ok\ntest_failed_independent_audit_is_rejected (test_v33_collection.InventoryTests) ... ok\ntest_incomplete_result_is_rejected (test_v33_collection.InventoryTests) ... ok\ntest_missing_artifact_is_rejected (test_v33_collection.InventoryTests) ... ok\ntest_other_dataset_is_rejected_even_without_a_result (test_v33_collection.InventoryTests) ... ok\ntest_resource_interruption_cannot_look_complete (test_v33_collection.InventoryTests) ... ok\ntest_second_seed_is_rejected (test_v33_collection.InventoryTests) ... ok\ntest_wrong_candidate_is_rejected (test_v33_collection.InventoryTests) ... ok\ntest_candidate_identity_is_checked (test_v33_exit_receipt.ExitReceiptTests) ... ok\ntest_gpu_snapshot_binding_is_checked (test_v33_exit_receipt.ExitReceiptTests) ... ok\ntest_launch_hash_is_checked (test_v33_exit_receipt.ExitReceiptTests) ... ok\ntest_missing_record_cannot_pass (test_v33_exit_receipt.ExitReceiptTests) ... ok\ntest_nonzero_exit_is_rejected (test_v33_exit_receipt.ExitReceiptTests) ... ok\ntest_observed_zero_exit_is_accepted (test_v33_exit_receipt.ExitReceiptTests) ... ok\ntest_ssh_failure_is_not_remote_completion (test_v33_exit_receipt.ExitReceiptTests) ... ok\ntest_concurrent_index_change_is_not_overwritten (test_v33_publication.SelectionTests) ... ok\ntest_failure_preserves_maximum_observation (test_v33_publication.SelectionTests) ... ok\ntest_selection_does_not_mutate_the_input_index (test_v33_publication.SelectionTests) ... ok\ntest_supported_gain_can_be_working_base_without_admission (test_v33_publication.SelectionTests) ... ok\ntest_threshold_is_strict (test_v33_publication.SelectionTests) ... ok\ntest_tiny_unsupported_gain_does_not_become_working_base (test_v33_publication.SelectionTests) ... ok\ntest_all_three_conditions_are_required (test_v33_closure.JointGateTests) ... ok\ntest_changed_boolean_cannot_override_the_evidence (test_v33_closure.JointGateTests) ... ok\ntest_malformed_interval_is_rejected (test_v33_closure.JointGateTests) ... ok\ntest_narrower_family_interval_is_rejected (test_v33_closure.JointGateTests) ... ok\ntest_negative_accuracy_blocks_support (test_v33_closure.JointGateTests) ... ok\ntest_nonfinite_evidence_is_rejected (test_v33_closure.JointGateTests) ... ok\ntest_zero_auc_is_not_positive (test_v33_closure.JointGateTests) ... ok\ntest_control_uses_the_independent_gate_auditor (test_v33_audit_dispatch.CommandTests) ... ok\ntest_terminal_uses_assist2017_and_registered_bootstrap (test_v33_audit_dispatch.CommandTests) ... ok\ntest_audit_failure_is_recorded_as_nonzero (test_v33_audit_dispatch.DispatchTests) ... ok\ntest_changed_remote_sources_prevent_dispatch (test_v33_audit_dispatch.DispatchTests) ... ok\ntest_existing_launch_is_preserved_without_retry (test_v33_audit_dispatch.DispatchTests) ... ok\ntest_missing_training_exit_prevents_any_dispatch (test_v33_audit_dispatch.DispatchTests) ... ok\ntest_non_cpu_test_report_prevents_dispatch (test_v33_audit_dispatch.DispatchTests) ... ok\ntest_ssh_failure_leaves_remote_status_unknown (test_v33_audit_dispatch.DispatchTests) ... ok\ntest_successful_exit_binds_the_launch (test_v33_audit_dispatch.DispatchTests) ... ok\n\n----------------------------------------------------------------------\nRan 40 tests in 1.512s\n\nOK\n",
+  "runner_sha256": "3625b7e0bf0818821085c152477ede8980ad4292f495fffbd4ff305a09e5c513",
+  "scope": "Synthetic gate tests, not scientific admission evidence.",
+  "skipped": 0,
+  "sources_sha256": {
+    "collect_v33_results.py": "0ff302607975c7609ad55b9f0e36876a93e36fb8cda9b8d44736bb64fde2f97a",
+    "invoke_v33_audit.py": "5f7d08485049537c53fe2df8b3ceab8d5473fc6462aabab97e234b70dbd70bdf",
+    "publish_v33_final.py": "ba61d72fa56bd9cfb05884a425f9b337d114722c3afb226f7fad190e9fc024f5",
+    "summarize_v33_progress.py": "5eb570d7cf6cb4e1254308f148db9a9b72ca2fe417aac64e4686f5bb166f50b6",
+    "test_v33_audit_dispatch.py": "564d711ce7c3752ec07e311f5795a58179d85526442be2c451b52a725af8569a",
+    "test_v33_closure.py": "ed2d5d3c6df9d221d318a1c86e12e024e3b2ad0d53f79d6edbc2b28d2966bf97",
+    "test_v33_collection.py": "f30039ab9bbd9571b6e6ae2a293b7ff63d5c085e63381f46947de17b6cf7416c",
+    "test_v33_exit_receipt.py": "66bb92737a48c12514b2d0e2820646ed601883b24ba8685a17279002312a7652",
+    "test_v33_publication.py": "597d8686956e89f2b27f50e6257c5f50f08065bf5ee7847eb32cf9c86398821e",
+    "verify_v33_closure.py": "ebfe19ce176d2659b3fa65035775ef6d444d35de937f6cc29807deb80d346e4b"
+  },
+  "sources_unchanged_during_tests": true,
+  "status": "pass",
+  "tests_run": 40,
+  "training_started": false
+}

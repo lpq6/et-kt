@@ -1,0 +1,579 @@
+{
+  "ablation_scope": {
+    "attention": "Remove attention and its FFNs/gates; the V39 finite input memory and modal residual remain active through SSM.",
+    "common": "The same five datasets must pass all ten independent controls; SSM/input-memory/modal-residual and attention/FFN contrasts are nested.",
+    "completion": "This package permits Assist2017 Full only. An independently audited pilot strictly above 0.8174 is required before any separately frozen expansion or independent module-control phase. One pilot never completes the same-five-of-eight goal.",
+    "concept_graph": "Remove graph only; the V39 finite input memory and modal residual stay active. Requires a fresh matched control after admission.",
+    "evidence": "Remove priors, learned statistics, direct evidence logits and support reliability; retain raw historical q/c/r and temporal conditioning.",
+    "factorized_input": "Disable the preserved v12 factorized residual path and train the remaining model independently.",
+    "ffn_gate": "Remove FFN gates only; the V39 finite input memory and modal residual stay active. Historical V32 is not a matched V43 control.",
+    "history_pace": "Remove only V27 historical-time conditioning; Newton readout remains active. A fresh matched control would be required after admission.",
+    "input_memory": "Remove the nested V39 finite SSM input memory and modal residual path; V33 is the independently trained control after full parity audits.",
+    "item_attempt_stage": "Disable only the ordinal attempt readout; historical time conditioning remains active.",
+    "prequential_newton": "Disable only Newton; graph recurrence stays active. A fresh matched control is required after admission.",
+    "ssm": "Remove both SSM uses and the nested finite input-memory and modal-residual effects; graph recurrence remains active."
+  },
+  "assist2017_first_gate": {
+    "expansion_requires_new_frozen_package": true,
+    "independent_terminal_audit_required": true,
+    "other_datasets_executable_in_this_package": false,
+    "strict_auc_floor": 0.8174
+  },
+  "baseline_training": {
+    "incumbent_rerun": false,
+    "run": false
+  },
+  "best_candidate": {
+    "auc": 0.8014311204701983,
+    "candidate_id": "a2g_v32_input_gated_ffn_20260911_v33",
+    "initial_state_path": "/home/lpq/a2g_mambakt/independent_a2g_ffn_gate_20260911_v33/artifacts/assist2017/seed42/initial_state.pt",
+    "initial_state_sha256": "e2e3e2ff18093e0a4de469194f34b45c950227a6c25950e6a339fa89212d1a44",
+    "initial_state_use": "comparison only; no artifact supplies model initialization",
+    "reference_dataset": "assist2017",
+    "result_path": "/home/lpq/a2g_mambakt/independent_a2g_ffn_gate_20260911_v33/artifacts/assist2017/seed42/full/result.json",
+    "result_sha256": "52faa100613019888a8bb889d97d16e67ad4d43948cacca620aeeff49dd235a7",
+    "source_sha256": "3c80a24b2c4f42991e638c8740378f60fc545369fce91bc2e4f2c61101c544c7"
+  },
+  "best_candidate_role": "V33 is retained control and highest audited observation; V38 is latest completed; V36/V37 are censored",
+  "best_observed_candidate": {
+    "auc": 0.8014311204701983,
+    "candidate_id": "a2g_v32_input_gated_ffn_20260911_v33",
+    "result_path": "/home/lpq/a2g_mambakt/independent_a2g_ffn_gate_20260911_v33/artifacts/assist2017/seed42/full/result.json",
+    "result_sha256": "52faa100613019888a8bb889d97d16e67ad4d43948cacca620aeeff49dd235a7",
+    "same_as_structural_control": true
+  },
+  "candidate_id": "a2g_v33_modal_residual_20260913_v43",
+  "candidate_structure": {
+    "ablation_dependencies": {
+      "no_attention": [
+        "attention",
+        "ffn_gate"
+      ],
+      "no_ssm": [
+        "ssm",
+        "input_memory"
+      ]
+    },
+    "active_initial_function_equals_v33": true,
+    "all_initial_state_tensors_equal_v33": false,
+    "applicability_limit": "metadata coverage and synthetic tests are not positive module evidence",
+    "assist2017_capacity": 96,
+    "assist2017_known_graph_nodes": 94,
+    "attention_method_inherited": true,
+    "attention_passes": 4,
+    "base": "a2g_v32_input_gated_ffn_20260911_v33",
+    "architecture_base": "a2g_v33_finite_input_memory_20260912_v39",
+    "changed_path": "zero-initialized multi-timescale residual memory inside the retained V39 SSM",
+    "common_initial_gradient_tolerance": {
+      "atol": 2e-06,
+      "rtol": 2e-05
+    },
+    "common_initial_gradients_bit_exact_claimed": false,
+    "common_initial_output_tolerance": {
+      "atol": 2e-06,
+      "rtol": 2e-05
+    },
+    "common_initial_outputs_bit_exact_claimed": false,
+    "common_initial_parameters_equal_v33": true,
+    "concept_graph": "unchanged V33 directed concept-node recurrence",
+    "concept_graph_passes": 1,
+    "disabled_behavior": "use_multimode_residual=0 delegates to unchanged V39 SSM; disabling both nested paths delegates to V33",
+    "dropout_policy": "no added dropout; original stochastic module calls retained",
+    "expected_assist2017_parameters": 5114869,
+    "expected_parent_state_tensors": 111,
+    "expected_total_state_tensors": 114,
+    "extra_cost": "7168 parameters; V39 finite input memory plus two zero-initialized mode-routing matrices; no extra dropout",
+    "ffn_gate": "unchanged V33 input-dependent hidden-neuron gates",
+    "ffn_gate_passes": 3,
+    "formula": "z_t=W*x_t+b; z'_t=z_t+sum_{lag=1..4}(w_lag*z_(t-lag)); only original projections are filtered",
+    "forward_method_inherited": true,
+    "full_model_arbitrary_width_equivalence_claimed": false,
+    "history_pace": "unchanged V33 historical-time conditioning",
+    "inherited_auxiliary_state_tensors": [
+      "attempt_readout.attempt_embedding.weight",
+      "attempt_readout.failure_embedding.weight",
+      "attempt_readout.output.weight",
+      "attempt_readout.run_embedding.weight",
+      "attempt_readout.sequence_norm.bias",
+      "attempt_readout.sequence_norm.weight",
+      "attempt_readout.sequence_projection.weight",
+      "attempt_readout.success_embedding.weight",
+      "attempt_readout.target_norm.bias",
+      "attempt_readout.target_norm.weight",
+      "attempt_readout.target_projection.weight",
+      "blocks.0.ffn.gate_bias",
+      "blocks.0.ffn.gate_weight",
+      "blocks.1.ffn.gate_bias",
+      "blocks.1.ffn.gate_weight",
+      "blocks.2.ffn.gate_bias",
+      "blocks.2.ffn.gate_weight",
+      "concept_graph.cell.bias_hh",
+      "concept_graph.cell.bias_ih",
+      "concept_graph.cell.weight_hh",
+      "concept_graph.cell.weight_ih",
+      "concept_graph.destination_projection.weight",
+      "concept_graph.event_projection.bias",
+      "concept_graph.event_projection.weight",
+      "concept_graph.output.weight",
+      "concept_graph.source_projection.weight",
+      "concept_graph.state_projection.weight",
+      "history_pace.scale",
+      "history_pace.shift",
+      "prequential_newton.output_scale",
+      "prequential_newton.projection.weight",
+      "ssm.input_memory.weight",
+      "ssm.mode_input_weight",
+      "ssm.mode_read_weight"
+    ],
+    "initialization": "one all-zero [3*d_model,1,4] tensor and two all-zero [num_heads,d_model] matrices; no RNG consumption",
+    "input_memory_coefficients_constrained_nonnegative": false,
+    "input_memory_excludes_current_projection": true,
+    "input_memory_lags": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_memory_passes": 1,
+    "input_memory_projection_groups": [
+      "candidate",
+      "gate",
+      "delta"
+    ],
+    "input_memory_reuses_hidden_state": false,
+    "input_memory_shapes": {
+      "ssm.input_memory.weight": [
+        768,
+        1,
+        4
+      ],
+      "ssm.mode_input_weight": [
+        8,
+        256
+      ],
+      "ssm.mode_read_weight": [
+        8,
+        256
+      ]
+    },
+    "modal_mode_count": 8,
+    "modal_rate_multipliers": [
+      1.0,
+      0.5,
+      0.25,
+      0.125,
+      0.0625,
+      0.03125,
+      0.015625,
+      0.0078125
+    ],
+    "modal_input_weight_shape": [
+      8,
+      256
+    ],
+    "modal_read_weight_shape": [
+      8,
+      256
+    ],
+    "modal_residual_readout": "input-conditioned convex readout of eight per-coordinate memories with fixed powers-of-two retention multipliers",
+    "modal_residual_uses_current_input_only_for_routing": true,
+    "input_memory_uses_corrected_projections": false,
+    "input_memory_weight_index_to_lag": [
+      4,
+      3,
+      2,
+      1
+    ],
+    "input_projection_passes": 1,
+    "literature_novelty_claimed": false,
+    "new_parameters": 7168,
+    "new_path_nested_in_ssm": true,
+    "new_state_tensors": [
+      "ssm.input_memory.weight",
+      "ssm.mode_input_weight",
+      "ssm.mode_read_weight"
+    ],
+    "original_ssm_projection_recomputed": false,
+    "parameter_matched_superiority_claimed": false,
+    "pedagogical_prerequisites_claimed": false,
+    "potential_same_five_with_all_ten_modules": [
+      "assist2012",
+      "assist2017",
+      "junyi2015",
+      "nips_task34",
+      "slepemapy"
+    ],
+    "prequential_newton": "unchanged V33 Newton readout",
+    "production_fixed_width": 200,
+    "retained_ablation_policy": "eight other old-module removals retain both nested V39 paths; no_ssm removes both",
+    "retained_ffn_gate_shapes": {
+      "blocks.0.ffn.gate_bias": [
+        512
+      ],
+      "blocks.0.ffn.gate_weight": [
+        512,
+        256
+      ],
+      "blocks.1.ffn.gate_bias": [
+        512
+      ],
+      "blocks.1.ffn.gate_weight": [
+        512,
+        256
+      ],
+      "blocks.2.ffn.gate_bias": [
+        512
+      ],
+      "blocks.2.ffn.gate_weight": [
+        512,
+        256
+      ]
+    },
+    "retained_graph_shapes": {
+      "cell.bias_hh": [
+        96
+      ],
+      "cell.bias_ih": [
+        96
+      ],
+      "cell.weight_hh": [
+        96,
+        32
+      ],
+      "cell.weight_ih": [
+        96,
+        32
+      ],
+      "destination_projection.weight": [
+        32,
+        256
+      ],
+      "event_projection.bias": [
+        32
+      ],
+      "event_projection.weight": [
+        32,
+        256
+      ],
+      "output.weight": [
+        256,
+        32
+      ],
+      "source_projection.weight": [
+        32,
+        256
+      ],
+      "state_projection.weight": [
+        32,
+        32
+      ]
+    },
+    "ssm_passes": 1,
+    "state_scope": "batch/window-local finite input memory and modal state; no cache or corrected-projection feedback",
+    "statistics": "unchanged V33 statistics",
+    "unused_inputs": [
+      "shft_rseqs",
+      "current/future responses",
+      "shft_tseqs",
+      "utseqs",
+      "shft_utseqs"
+    ],
+  "zero_initialized_new_tensors": [
+    "ssm.input_memory.weight",
+    "ssm.mode_input_weight",
+    "ssm.mode_read_weight"
+  ]
+  },
+  "closed_predecessor": {
+    "admission_pass": false,
+    "auc": 0.8014293008956717,
+    "candidate_id": "a2g_v33_causal_attention_coverage_20260912_v38",
+    "required_status": "complete_independent_random_init_validation",
+    "result_path": "/home/lpq/a2g_mambakt/independent_a2g_attention_coverage_20260912_v38/artifacts/assist2017/seed42/full/result.json",
+    "result_sha256": "e59bfc0f2fb09a460a76f1f64cc40c1c63f55f90db91114b763b7b1af41fbe39"
+  },
+  "completion_requirements": [
+    "At least the same five of eight datasets exceed all applicable existing reference scores, with references reconciled to the supplied table.",
+    "The same five datasets must pass independent evidence, SSM, attention, factorized-input, item-attempt, history-pace, Newton, graph, FFN-gate and finite-input-memory controls.",
+    "Positive module AUC effects and learner-cluster uncertainty are audited; single seed42 and validation fold0 remain the user scope.",
+    "No baseline or existing incumbent retraining, checkpoint initialization, hyperparameter sweep, extra seed search or silent resource retry.",
+    "Preserve learner isolation, training-only vocabularies/priors, immutable source/data/initialization/schedule provenance and causal prediction.",
+    "Report reference-score comparisons as descriptive, not matched five-fold or held-out generalization evidence; missing baselines never count as zero.",
+    "Assist2017 must pass its unchanged floor and independent audit before any other dataset is run."
+  ],
+  "controls": [],
+  "dataset_order": [
+    "assist2017"
+  ],
+  "dataset_order_rule": "explicit user instruction: Assist2017 must pass first",
+  "datasets": [
+    "assist2017"
+  ],
+  "earlier_interrupted_predecessor": {
+    "audit_file": "reference_v36_interruption_audit.json",
+    "audit_sha256": "a005de4cb7401c52959c2520a5f93150c9ff29886abcab8e3dce53e9d23db25e",
+    "automatic_retry_allowed": false,
+    "candidate_id": "a2g_v33_learned_relative_lag_20260911_v36",
+    "independent_terminal_metrics_verified": false,
+    "manifest_sha256": "2468a8191eb68d0fc647692d7d3c1693924d568a802d36b58538ba9afbc80712",
+    "package_path": "/home/lpq/a2g_mambakt/independent_a2g_relative_lag_20260911_v36",
+    "publication_file": "reference_v36_interruption_publication_check.json",
+    "publication_sha256": "69ed0b9ae92ebaccd8f75bb0bbe64b83851992740429a12ac28d71ea8c23decb",
+    "status": "resource_interrupted_incomplete_no_automatic_retry",
+    "treated_as_performance_failure": false
+  },
+  "eligible_datasets": [
+    "statics2011",
+    "assist2009_corrected_collapsed",
+    "assist2017",
+    "nips_task34",
+    "assist2015",
+    "assist2012",
+    "slepemapy",
+    "junyi2015"
+  ],
+  "execution_order": [
+    "full"
+  ],
+  "experiment_family": "independent_a2g_modal_residual_20260913_v43",
+  "failure_policy": "One Assist2017 Full run, max200/patience20. AUC<=0.8174 closes this V39-based modal-residual candidate and related mode count, rate schedule, routing, readout, initialization, width and seed retries. Resource interruption is incomplete, not scientific failure. No baseline/control rerun, sweep or automatic resource resume/retry.",
+  "global_admission": {
+    "dataset_point_gate": "Full AUC strictly exceeds that dataset's unchanged reference floor",
+    "eligible_dataset_count": 8,
+    "futility_rule": "A completed Assist2017 AUC not strictly above 0.8174 closes this candidate. Other datasets cannot rescue a failed pilot and cannot execute in this package.",
+    "mandatory_assist2017_precondition": true,
+    "missing_or_interrupted_cell_is_not_a_scientific_failure": true,
+    "required_dataset_count": 5,
+    "same_datasets_for_baselines_and_all_modules": true
+  },
+  "host": "172.25.114.0",
+  "hypothesis": "Finite earlier-input combinations before nonlinear SSM transitions may improve local event modelling. The earlier window error profile is retrospective and does not establish this mechanism as a cause of the AUC gap. Causal convolution already exists in reviewed historical token-smoothing code.",
+  "incumbent": {
+    "auc": 0.7857959831005806,
+    "best_epoch": 41,
+    "candidate_id": "single_trunk_retained_memory_readout_20260907_v1",
+    "checkpoint_path": "/home/lpq/a2g_mambakt/independent_trainfold_20260907_v2_172/artifacts/assist2017/seed42/full/selected_model.pt",
+    "checkpoint_sha256": "3d05cba823cb2126b19de52e56bf0edb347a094a6e086e9624cb324b113ee20a",
+    "epochs": 61,
+    "initial_state_path": "/home/lpq/a2g_mambakt/independent_trainfold_20260907_v2_172/artifacts/assist2017/seed42/initial_state.pt",
+    "initial_state_sha256": "c083eacc76d6854bab60329586a375eef9c29ab7ebe9ba93411a84c01abe593f",
+    "initial_state_use": "Compare with independently generated random-init tensors only; never initialize or fine-tune from a trained checkpoint.",
+    "package_manifest_sha256": "86ceda4c1394c41b21c6d479e82d3df1944d8f3dddf89248eccd9874990f41a2",
+    "retained_paths": [
+      "support-calibrated priors and RWCE",
+      "original SSM",
+      "original four-layer postnorm attention",
+      "retained SSM readout",
+      "original prediction projections and dropout"
+    ],
+    "source_sha256": "25150aa675b480661daceaeee3d254645327e642e6bf74a30e2a692ba5a3c1d8"
+  },
+  "interrupted_predecessor": {
+    "audit_file": "reference_v37_interruption_audit.json",
+    "audit_sha256": "eaf9f7db0498c82a48a2805288ec9de76e7df10884b90d3ee9276bf1b7b2aa6b",
+    "automatic_retry_allowed": false,
+    "candidate_id": "a2g_v33_response_conditioned_transition_20260911_v37",
+    "independent_terminal_metrics_verified": false,
+    "manifest_sha256": "193dcbd3be9bbe25e23098a6405d137c707398953d43b8f5231190e90bd87c82",
+    "package_path": "/home/lpq/a2g_mambakt/independent_a2g_response_transition_20260911_v37",
+    "publication_file": "reference_v37_interruption_publication_check.json",
+    "publication_sha256": "75ae0a00b366d6b2ee67c6a4c7bc1628efdc571f58c4e3c5986314c6f281ee62",
+    "status": "resource_interrupted_incomplete_no_automatic_retry",
+    "treated_as_performance_failure": false
+  },
+  "item_dropout_override": {
+    "assist2015": 0.0
+  },
+  "launcher": {
+    "required_entry": "launch_candidate.py",
+    "source_sha256": "36ce98712b932ea7d82bc9e5a30c8b43df844f39662fd796f09e08c9bc3a2eef"
+  },
+  "model_kwargs": {
+    "boundary_local_floor": 0.5,
+    "d_ff": 512,
+    "d_model": 256,
+    "dropout": 0.2,
+    "input_decay_scale": 0.5,
+    "item_residual_dropout": 0.4,
+    "item_residual_dropout_schedule": "constant",
+    "n_blocks": 4,
+    "normalization_topology": "full_postnorm",
+    "num_attn_heads": 8,
+    "prior_scale": 0.08,
+    "seq_len": 200,
+    "stat_scale": 0.12,
+    "support_smoothing": 24.0,
+    "use_concept_graph": 1,
+    "use_evidence_equivalent_residual": 1,
+    "use_factorized_input": 1,
+    "use_ffn_gate": 1,
+    "use_history_pace": 1,
+    "use_input_memory": 1,
+    "use_item_attempt_stage": 1,
+    "use_prequential_newton": 1,
+    "use_recency_weighted_concept_evidence": 1,
+    "use_split_boundary": 1
+  },
+  "phase": "assist2017_full_only",
+  "physical_gpu": 1,
+  "pilot": {
+    "dataset": "assist2017",
+    "seed": 42
+  },
+  "planned_ablation_variants": {
+    "no_attention": {
+      "use_attention_branch": 0
+    },
+    "no_concept_graph": {
+      "use_concept_graph": 0
+    },
+    "no_evidence": {
+      "use_evidence_branch": 0
+    },
+    "no_factorized_input": {
+      "use_factorized_input": 0
+    },
+    "no_ffn_gate": {
+      "use_ffn_gate": 0
+    },
+    "no_history_pace": {
+      "use_history_pace": 0
+    },
+    "no_input_memory": {
+      "use_input_memory": 0
+    },
+    "no_item_attempt_stage": {
+      "use_item_attempt_stage": 0
+    },
+    "no_prequential_newton": {
+      "use_prequential_newton": 0
+    },
+    "no_ssm": {
+      "use_ssm_branch": 0
+    }
+  },
+  "point_gate": {
+    "admission": "Assist2017 Full strictly exceeds0.8174 and passes independent terminal audit before separately frozen expansion.",
+    "candidate_minus_best_candidate_auc": "Legacy field compares to V33, not completed V38 or interrupted V36/V37",
+    "candidate_minus_incumbent_auc": "Assist2017 reference comparison only; not a cross-dataset metric",
+    "full_minus_each_ablation_acc": ">= 0",
+    "full_minus_each_ablation_auc": "> 0",
+    "full_minus_existing_reference_floor_auc": "> 0; descriptive comparison, not matched baseline retraining",
+    "historical_reference": "descriptive_only"
+  },
+  "prospective_protocol_changes": {
+    "added_capacity_limit": "V33 has3072 fewer parameters; no parameter-matched or equal-FLOP claim",
+    "information_boundary": "strictly earlier uncorrected SSM input projections only; no new labels, metadata, loss or persistent learner state",
+    "new_module_family": "Ten planned contrasts, family80; not a correction across all adaptive architecture screens.",
+    "previous_candidate": "V36/V37 are resource-censored and not retried; V38 remains latest completed, V33 retained.",
+    "source_precedents": "Token smoothing, hidden-state feedback, response-conditioned projections, attention score stencils and relative-lag biases were explicitly reviewed.",
+    "unchanged_scope": "one Assist2017 Full run; other datasets and control retraining disabled"
+  },
+  "reference_auc": {
+    "assist2009_corrected_collapsed": 0.8566249815040318,
+    "assist2012": 0.779282,
+    "assist2015": 0.7337756158427048,
+    "assist2017": 0.8174,
+    "junyi2015": 0.804888,
+    "nips_task34": 0.8273,
+    "slepemapy": 0.800163,
+    "statics2011": 0.8293542042910951
+  },
+  "reference_snapshot": {
+    "csv_sha256": "ebbf935ed01adc381833a6422e8b9fe03d04dbffa5c217bee1e98f3fb6f65d88",
+    "floor_policy": "all eight v15 conservative floors retained without reduction",
+    "markdown_sha256": "8a5de11ae11e631a0565e090bde93871a3680caff4795e99e1ac9ebe64ab64b0"
+  },
+  "reference_status": "Unchanged conservative floors cover the current adjacent CSV maxima; Assist2017/NIPS retain the stronger paper-only numeric targets. Paper-only values are not represented as matched replications.",
+  "resource_policy": {
+    "block_other_compute_processes_on_any_gpu": true,
+    "block_other_user_processes_on_any_gpu": true,
+    "check_before_cuda": true,
+    "include_graphics_processes": true,
+    "inherited_guard_manifest_sha256": "f5f562b3d915e7bd533351c8dec0ffebdb344bb47fb533eae23e81cbc37927cd",
+    "limitation": "polling detects new arrivals but does not provide a scheduler-exclusive reservation",
+    "on_conflict": "terminate this job only; preserve partial artifacts; no automatic retry",
+    "physical_gpu": 1,
+    "policy_revision": "v15_resource_r1",
+    "poll_seconds": 2,
+    "revision_scope": "GPU resource policy only; model, data, initialization and training unchanged",
+    "supersedes_unexecuted_manifest_sha256": "11be22e6d054b33a6b6f118f84a500d06c16dcc727fc5e3dc9e706495d132353",
+    "system_display_exception": {
+      "compute_or_combined_type_exempted": false,
+      "identity_source": "nvidia-smi XML and independent ps PID/UID/username/kernel command",
+      "nvml_executable_to_kernel_command": {
+        "/usr/bin/gnome-shell": "gnome-shell",
+        "/usr/lib/xorg/Xorg": "Xorg"
+      },
+      "required_type": "G",
+      "required_uid": 128,
+      "required_user": "gdm"
+    },
+    "system_graphics_exception_authorized": true,
+    "unknown_owner_or_failed_query": "block",
+    "uuid": "GPU-e1065296-99f9-bf6e-7898-d6755ca37a9d"
+  },
+  "schema_version": 3,
+  "seeds": [
+    42
+  ],
+  "structural_control": {
+    "auc": 0.8014311204701983,
+    "candidate_id": "a2g_v32_input_gated_ffn_20260911_v33",
+    "initial_state_path": "/home/lpq/a2g_mambakt/independent_a2g_ffn_gate_20260911_v33/artifacts/assist2017/seed42/initial_state.pt",
+    "initial_state_sha256": "e2e3e2ff18093e0a4de469194f34b45c950227a6c25950e6a339fa89212d1a44",
+    "initial_state_use": "comparison only; no artifact supplies model initialization",
+    "reference_dataset": "assist2017",
+    "result_path": "/home/lpq/a2g_mambakt/independent_a2g_ffn_gate_20260911_v33/artifacts/assist2017/seed42/full/result.json",
+    "result_sha256": "52faa100613019888a8bb889d97d16e67ad4d43948cacca620aeeff49dd235a7",
+    "source_sha256": "3c80a24b2c4f42991e638c8740378f60fc545369fce91bc2e4f2c61101c544c7"
+  },
+  "test_access": false,
+  "train_folds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "training": {
+    "auxiliary_loss_weight": 0.0,
+    "batch_order": "fixed_csv_filtered_order",
+    "batch_size": 64,
+    "checkpoint_selection": "max validation AUC then min NLL, Brier, ECE15 then earliest epoch",
+    "cpu_threads": 1,
+    "deterministic_algorithms": true,
+    "evaluation_batch_size": 128,
+    "independent_optimizer_per_variant": true,
+    "initialization": "random_all_model_parameters_plus_training_only_empirical_priors",
+    "learning_rate": 0.0001,
+    "max_epochs": 200,
+    "optimizer": "Adam",
+    "patience": 20,
+    "pretrained_checkpoint": null,
+    "shared_initial_state_within_dataset_seed": true,
+    "state_carry_between_segments": false,
+    "weight_decay": 0.0
+  },
+  "uncertainty": {
+    "bootstrap_seed": 20260907,
+    "confidence_level": 0.95,
+    "module_effect_evidence_gate": "Positive AUC point effects and learner-bootstrap intervals; report both ordinary95% and family-adjusted intervals without claiming training-seed robustness.",
+    "multiplicity_family": "eight datasets times ten planned contrasts: evidence, SSM, attention, factorized input, item attempt, history pace, Newton, concept graph, FFN gate and finite input memory; nested contrasts are not disjoint",
+    "multiplicity_family_size": 80,
+    "paired_bootstrap_replicates": 10000,
+    "unit": "learner",
+    "validation_intervals": "Exploratory and conditional on validation checkpoint and architecture selection; not held-out or training-seed confirmation."
+  },
+  "user_scope": "Single fold (validation fold0) and single seed42. At least five of eight identical datasets must pass both all-baseline and independently retrained module gates. Five of five refers to datasets, not seeds.",
+  "validation_folds": [
+    0
+  ],
+  "variants": {
+    "full": {
+      "use_attention_branch": 1,
+      "use_evidence_branch": 1,
+      "use_ssm_branch": 1
+    }
+  },
+  "window_test_access": false
+}

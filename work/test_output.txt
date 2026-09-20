@@ -1,0 +1,16 @@
+﻿.\.venv\Scripts\python.exe : ...................................D:\Anaconda\envs\machine_learning\lib\site-packages\tor
+ch\nn\functional.py:5476: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pyt
+orch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:263.)
+所在位置 行:1 字符: 34
++ ... kt_lab\a2g; .\.venv\Scripts\python.exe -m unittest discover -s tests  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (..................utils.cpp:263.):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  attn_output = scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)
+
+.....................................................................
+----------------------------------------------------------------------
+Ran 104 tests in 138.758s
+
+OK

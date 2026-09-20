@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "baseline_embedding_capacity_safe": true,
+    "cpu_only": true,
+    "exact_legacy_tensor_parity": true,
+    "fixed_order_exact_coverage": true,
+    "fixed_schedule_hash": true,
+    "learner_overlap_rejected": true,
+    "mixed_depth_repeated_learner_batches_allowed": true,
+    "mixed_train_valid_rejected": true,
+    "no_cache_files_created": true,
+    "out_of_capacity_id_rejected": true,
+    "scored_count": true,
+    "unknown_validation_id_retained": true
+  },
+  "scope": "synthetic_only_no_production_dataset_access",
+  "source_hashes": {
+    "audit_data_contract.py": "e937b6f2adb6772a44d28549a98fce263d553468a5b2658699fcf371e90887bd",
+    "legacy_data_loader.py": "8f1335a42608370661c83f8a5bcf3e61c358b658542177c11258235146a9a104",
+    "strict_sequence_data.py": "262b983918dd9753929ca6e63dd80d563a763ead938cddbbe8bc972ed56ed300"
+  },
+  "status": "pass",
+  "test_access": false,
+  "window_test_access": false
+}

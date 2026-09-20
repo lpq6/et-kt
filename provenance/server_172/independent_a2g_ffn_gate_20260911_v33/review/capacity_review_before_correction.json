@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-11T00:27:13.067667+00:00",
+  "cuda_initialized": false,
+  "data_config_sha256": "ae7827cbcabafbcb77fc45fbbd869a5a0eaf53e84895be904d29714d0253887a",
+  "dataset": "assist2017",
+  "declared_capacity": 96,
+  "first_development_test_report_sha256": "7983a3537a0a620eba6fb980d18486e23cd68c930b46cfcbb29aad7bf25bec35",
+  "full_goal_complete": false,
+  "gpu_used": false,
+  "known_training_concepts": 94,
+  "new_parameters_or_initializers_changed": false,
+  "optimizer_steps": 0,
+  "parent_embedding_rows": 97,
+  "protocol_frozen": false,
+  "prototype_graph_nodes": 95,
+  "prototype_passed_only_small_synthetic_tests": 42,
+  "real_sequences_parsed": false,
+  "required_correction": "pass historical concept embeddings only through the declared capacity",
+  "required_graph_nodes": 94,
+  "source_sha256": {
+    "initial_concept_graph_candidate.py": "8abeae94576b687a5354c302c41a34c14d8b02a40a50c8a2157d9a159bd7f70e",
+    "initial_test_concept_graph.py": "a615743b4b787dd124b9da0d986abf60dbbaf8df541d18f83fd15277174fe938"
+  },
+  "status": "confirmed_extra_parent_embedding_row_is_not_a_known_concept",
+  "trained_weights_read": false,
+  "trainfold_summary_sha256": "31f65a7d78c15167bacdd893cab5d792460ddf0c590234cc6538c150b6ac4432",
+  "training_started": false
+}

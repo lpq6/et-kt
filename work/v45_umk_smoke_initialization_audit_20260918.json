@@ -1,0 +1,41 @@
+{
+  "status": "server_original_plus_declared_umk_scalars_initialization_exact",
+  "state_tensors": 116,
+  "parameters": 5114871,
+  "initial_state_sha256": "402c1e9c9c8dd440a8f88375b16da1f883551429b3438b3cf63327d9efd87f10",
+  "original_runner_sha256": "6fd13c64396a094e660298e40d899e410a764a8fbc9c5d79d7bd39096ecf536e",
+  "data_binding": {
+    "csv_sha256": "2fa792134739275c7e27db0d91f2200d9669e6691480ac28e53d2d2f9c614861",
+    "mapping_sha256": "7f8122704d9dea7ad06a19e85a951fae26579ba8d296b4285db4d64bc2eb2ebf",
+    "counts": {
+      "train": {
+        "segments": 3582,
+        "learners": 1093,
+        "scored_interactions": 606414
+      },
+      "validation": {
+        "segments": 905,
+        "learners": 274,
+        "scored_interactions": 153067
+      }
+    },
+    "train_validation_uid_overlap": 0,
+    "test_access": false
+  },
+  "prior": {
+    "source": "training_folds_only",
+    "selected_interactions": 606414,
+    "global_rate": 0.37260866165161133,
+    "smoothing": 24.0,
+    "scale": 0.18
+  },
+  "gpu_used": false,
+  "trained_checkpoint_loaded": false,
+  "performance_claim": false,
+  "parent_state_tensors": 114,
+  "server_common_state_exact": true,
+  "declared_new_scalar_parameters": {
+    "ssm.umk_alpha": 0.1,
+    "umk_beta": 0.5
+  }
+}

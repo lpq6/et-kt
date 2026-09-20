@@ -1,0 +1,152 @@
+{
+  "assist2009_corrected_collapsed": {
+    "dpath": "/home/lpq/a2g_mambakt/train_fold_vocab_five_20260907_v1_172/assist2009_corrected_collapsed",
+    "emb_path": "",
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_type": [
+      "questions",
+      "concepts"
+    ],
+    "maxlen": 200,
+    "num_c": 122,
+    "num_q": 17115,
+    "train_valid_file": "train_valid_sequences.csv"
+  },
+  "assist2012": {
+    "dpath": "/home/lpq/a2g_mambakt/train_fold_vocab_eight_20260907_v1_172/assist2012",
+    "emb_path": "",
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_type": [
+      "questions",
+      "concepts"
+    ],
+    "maxlen": 200,
+    "num_c": 266,
+    "num_q": 51561,
+    "train_valid_file": "train_valid_sequences.csv"
+  },
+  "assist2015": {
+    "dpath": "/home/lpq/a2g_mambakt/train_fold_vocab_five_20260907_v1_172/assist2015",
+    "emb_path": "",
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_type": [
+      "concepts"
+    ],
+    "maxlen": 200,
+    "num_c": 102,
+    "num_q": 0,
+    "train_valid_file": "train_valid_sequences.csv"
+  },
+  "assist2017": {
+    "dpath": "/home/lpq/a2g_mambakt/train_fold_vocab_five_20260907_v1_172/assist2017",
+    "emb_path": "",
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_type": [
+      "questions",
+      "concepts"
+    ],
+    "maxlen": 200,
+    "num_c": 96,
+    "num_q": 3109,
+    "train_valid_file": "train_valid_sequences.csv"
+  },
+  "junyi2015": {
+    "dpath": "/home/lpq/a2g_mambakt/train_fold_vocab_eight_20260907_v1_172/junyi2015",
+    "emb_path": "",
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_type": [
+      "questions",
+      "concepts"
+    ],
+    "maxlen": 200,
+    "num_c": 41,
+    "num_q": 719,
+    "train_valid_file": "train_valid_sequences.csv"
+  },
+  "nips_task34": {
+    "dpath": "/home/lpq/a2g_mambakt/train_fold_vocab_five_20260907_v1_172/nips_task34",
+    "emb_path": "",
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_type": [
+      "questions",
+      "concepts"
+    ],
+    "maxlen": 200,
+    "num_c": 59,
+    "num_q": 950,
+    "train_valid_file": "train_valid_sequences.csv"
+  },
+  "slepemapy": {
+    "dpath": "/home/lpq/a2g_mambakt/train_fold_vocab_five_20260907_v1_172/slepemapy",
+    "emb_path": "",
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_type": [
+      "questions",
+      "concepts"
+    ],
+    "maxlen": 200,
+    "num_c": 1459,
+    "num_q": 2910,
+    "train_valid_file": "train_valid_sequences.csv"
+  },
+  "statics2011": {
+    "dpath": "/home/lpq/a2g_mambakt/train_fold_vocab_eight_20260907_v1_172/statics2011",
+    "emb_path": "",
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "input_type": [
+      "concepts"
+    ],
+    "maxlen": 200,
+    "num_c": 1225,
+    "num_q": 0,
+    "train_valid_file": "train_valid_sequences.csv"
+  }
+}

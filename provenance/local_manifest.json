@@ -1,0 +1,53 @@
+{
+  "status": "verified",
+  "v33_manifest_bindings": 148,
+  "v33_archive_sha256": "67750770da2a70df363d77b77635f01707e2586e685486aa4d4786f7d2f0509a",
+  "v43_verified_files": {
+    "input_memory_candidate.py": "628dfbdfc867e350a2bd40099227f51e5037eeeba76cbe93213ad13fd68d6ad0",
+    "modal_residual_candidate.py": "1a80b2f27d0f8a6db0051765e5eb382db1fb8f745deeac56508860462b04b00c"
+  },
+  "v43_full_package_verified": false,
+  "local_source": {
+    "__init__.py": "671e4611c861f136f19341b25920f32fc207122cd0a5d3c134880c799c4a6280",
+    "_initialization.py": "45034b86ca84f4226d036e5ef4b74c5d06b53123d9ed8727af398d05043b4e75",
+    "aligned_history.py": "d5516535f35aee5285b3cd30ef63aaa6cd86c9c4df50240d727c890c2b83c55b",
+    "candidate.py": "b3e3ec3fdf865df7a22f30252d3d61634074b16db5fbaecec3ba2991fc470235",
+    "data.py": "b98c1b00941feaec751338ba4552c58ed29a39aeebd48ad0b2b6f5f7ba6e07f6",
+    "experiment.py": "55689ab3aad5d95deb74fb2ec584c20df8192aa321fa11d89c3d0a225d4b963d",
+    "metrics.py": "ffe1cf3671a45258bc300ecc86ede2efbf42981d0741437e27ea711b1217c447",
+    "model.py": "a966bff72dc7fa99666784755602661f5e387ff627f2e0acea9dd1409ec31fba",
+    "modules/__init__.py": "9f64af7a9dbf62afff6bfa2fe330a2d18d3a7b9c167dc2ac5d4bf14266688a09",
+    "modules/attempt.py": "5c3598526efef3566a28cdf10e8706d528f95a4118d4aa9d86fef6988aba44f4",
+    "modules/core.py": "76311e61753300643d7a967ebe7d32a897f0febeb38e02cb3e3647915ba4d9e0",
+    "modules/evidence.py": "13c042e1fe1ff9a64f00b06b8d45cb61aa8bf5604e867f78d0f0c429973857f6",
+    "modules/ffn.py": "9e865a024ffdcc03b3fe3e376307d4216a09497392b9f3c67064257da70dfc1e",
+    "modules/graph.py": "9efc7b1a85f19966ce8e9f0464d9cd6a6c176606936b5e87efe60831b8ce3351",
+    "modules/input_memory.py": "333edd513819c3f79bee86f2c7d33d59aa23100d7ed59af694e57d0ce18ffe48",
+    "modules/modal.py": "113b11ace0c8d70ff6e39b8c023cf0cc2527a8658b6068ff480f2477ef3f2b66",
+    "modules/newton.py": "8c75d6bc75c7eebae8be7eccd6fd91d582ed5daf42915c50b8a4f711604177b8",
+    "modules/pace.py": "a5bdee9ecb06319bec464a6aaca86eddd969df45f4e0292c129abcc4909d4f7c",
+    "modules/umk.py": "a4c65a8f492a7d7fa51cfe5b657d3647016e4a7387db9ea318e0d8f0435838dd",
+    "protocol.py": "849d56795c29aac9037a6b0556fd5cf9a294f5c7c2769309ede373a2ce7d3f0c",
+    "provenance.py": "f456b1ca35fd4026254543af45f2e600d250e3883b33d1fa58572ec5fc6e251b",
+    "randomness.py": "f243e538d2228f9beb6c089a4f45e332be5ef40463f182a7119e59f2ffba6128",
+    "transfer.py": "c71b42f93540128bad904d27822ac2e4f3485acebcd8c5ef4ede50da609aa989",
+    "transfer_gate.py": "1f8887ac09de7ddcc62ce33950898e3413b73038207e0d57d39bf09a80a3bcbf",
+    "uid.py": "ac03a18e63b66c587519e6ca4cd67fcd9630f015379665b94e7e6c05a2689761",
+    "umk.py": "7cddeed43204dc62c2b651723acfa73c9edb1df25729b4fdcf02075a01cb8436"
+  },
+  "local_configuration": {
+    "assist2017_v33.json": "dcc69b8ab7f819551a4a68078164b869627467661e8aa0bcd0784c2f62829616",
+    "assist2017_v43.json": "3c4668dc25ed2d87dc54aee34976899a0ed56fd4cc35320ea3c322dac3610b83",
+    "assist2017_v43_lowmem.json": "cacee3489191d95d2f80f7fa2bde0798ed3b6a0542c070cf477fffd03906c1bc",
+    "assist2017_v43_lowmem_batch256.json": "acad014156a9a9b6d53a0ebbfe54592e68193d80abb3796fe4522aa86abbb28f",
+    "assist2017_v44_aligned_history.json": "5ddbf64616ff5ce0f2dbb9c15a4a294078fac6e2d7799988733f94a2737e5be6",
+    "assist2017_v45_umk_all.json": "b8783fd6f85e9abb20198c3751bd80ac9c4cc60d2f68c562aab702ad1883bf08",
+    "assist2017_v45_umk_attn.json": "3c61735e7faef67ead33bb4481f68687a514c39aa4bfc335e05688a2eb880f5e",
+    "assist2017_v45_umk_off.json": "9affdaebd5fdd1f5857d03c516387ede64dc608402dd5e94b7c36ae850422b45",
+    "assist2017_v45_umk_rwce.json": "bb0722eac5ee785838c20c86b77f15826ae597ebaba79314f6d4687dc861cfdc",
+    "assist2017_v45_umk_ssm.json": "28b57b3e3c58100f6d334f0cc8270c4c2e195a7d6799c9cde7bb044e61e51d24",
+    "assist2017_v46_compact.json": "f45cffd889e57fc851f7626d2f7424d1230efd926eaca8cb751f336e35af3657",
+    "assist2017_v47_transfer.json": "c7438ea1740a1feb52382103788fcb4760d1acab9157e6f13ade5aa7906a1549",
+    "assist2017_v48_causal_transfer.json": "c2f3cbc6f06ffff81b9587093a60fe90b96f7a30f5ec0adbe7031eec2db3fc8a"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "seven_retrieved_files_match_existing_server_manifest",
+  "verified_local_date": "2026-09-18",
+  "timezone": "Asia/Shanghai",
+  "source_host": "lpq@172.25.114.0",
+  "verification_manifest": "../server_172/independent_a2g_modal_residual_20260913_v43/manifest.json",
+  "manifest_sha256": "2ea3f1296a655876e39bd5bd6ed112cd45e3fe27a2f2425af91851c76e37b326",
+  "files": {
+    "paired_learner_audit.py": {
+      "manifest_key": "auditors/paired_learner_audit.py",
+      "sha256": "e2c6663cf6e5acdb9be2dca83b0addf4394afe2a55372e57915bbb815a0d4996"
+    },
+    "v33_closure.json": {
+      "manifest_key": "reference_v33_closure.json",
+      "sha256": "429dff741322bad8ac3334be0b1c5adca16b300a1bd201d7c1f02d1de98c3e54"
+    },
+    "v38_closure.json": {
+      "manifest_key": "reference_v38_closure.json",
+      "sha256": "d97f00b2432bbca1a48a636b48e3fc4837973c8ed85c89f7136bb6958ba37cdf"
+    },
+    "v43_design_audit.md": {
+      "manifest_key": "design_audit.md",
+      "sha256": "ec2f5570a75d5d6fff6830b73a2ff75bee3be47e7ff14bd02d3edd0a4f1bfaa0"
+    },
+    "v43_protocol.json": {
+      "manifest_key": "protocol.json",
+      "sha256": "8d62a39ec2d709f8c92f6fde49121e139f87287d18a469e5aad9a5675801d0d9"
+    },
+    "v43_reference_snapshot.json": {
+      "manifest_key": "reference_snapshot.json",
+      "sha256": "e1e2a639a4475920f20da67e856615a23c8c85e4558efb839c5d540aaefcb931"
+    },
+    "v43_source_review.json": {
+      "manifest_key": "source_review.json",
+      "sha256": "e6ae4ecb2780a6c6136faf98f870ce360916147e3d788e7afd458afd520a47ce"
+    }
+  },
+  "limits": [
+    "Hashes bind bytes to the previously retrieved manifest, not a digital signature.",
+    "This is a partial v43 source and design review, not a complete archive audit.",
+    "Closure metrics are historical reports, not new local performance evidence.",
+    "The paired auditor is retained as source evidence and is not the active local audit."
+  ]
+}

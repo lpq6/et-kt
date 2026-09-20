@@ -1,0 +1,194 @@
+{
+  "frozen_manifest_verified_files": 148,
+  "package": "independent_a2g_ffn_gate_20260911_v33",
+  "transform": "AST-selected definitions, no experiment execution",
+  "local_iterations": [
+    {
+      "candidate": "v44_aligned_history_local",
+      "origin": "local code review, not a server model export",
+      "description": "Use diagonal0 for base statistics on already shifted history; keep diagonal-1 for v33/v43.",
+      "files": [
+        "src/a2g/aligned_history.py",
+        "src/a2g/_initialization.py",
+        "src/a2g/experiment.py",
+        "configs/assist2017_v44_aligned_history.json"
+      ],
+      "design": "docs/V44_ALIGNED_HISTORY.md",
+      "added_parameters": 0,
+      "server_initialization_unchanged": true,
+      "server_forward_equivalence_claimed": false,
+      "auc_gain_claimed": false
+    }
+  ],
+  "records": [
+    {
+      "source": "sources/work/a2g_mambakt_promoted_no_duplicate_folded_bias_20260715.py",
+      "sha256": "3ee4e7e476e6a9b055caedc9c0607274c6bfe923e69c2d90921ce2326b1fabee",
+      "definitions": [
+        "SelectiveSSMBlock",
+        "FoldedZeroNormLinear"
+      ],
+      "methods": null
+    },
+    {
+      "source": "sources/work/a2g_mambakt_joint_weak_stat_prune_physical.py",
+      "sha256": "3baa5b662134af0a932092ddb14695a88ba96100329b1e62ef290d35be5d8c95",
+      "definitions": [
+        "FoldedSelectedNormLinear"
+      ],
+      "methods": null
+    },
+    {
+      "source": "sources/work/a2g_mambakt_one_epoch_concept_novelty_curriculum_candidate.py",
+      "sha256": "1d9e4e50de60040834b2d3367bbfbc22abf0bac45c0239c94db2ed83d6f5c900",
+      "definitions": [
+        "OneEpochConceptNoveltyDropout"
+      ],
+      "methods": null
+    },
+    {
+      "source": "attempt_stage_candidate.py",
+      "sha256": "8838f283ad482c05b42ded88ca2d5635daaba42f4d6954cb0587f59d19eeec79",
+      "definitions": [
+        "item_attempt_indices",
+        "ItemAttemptReadout"
+      ],
+      "methods": null
+    },
+    {
+      "source": "history_pace_candidate.py",
+      "sha256": "6c77f6b9349d3f964a89d1bd66b839718cba72a587589db743c7960048e125c7",
+      "definitions": [
+        "historical_pace_feature",
+        "HistoricalPaceModulation"
+      ],
+      "methods": null
+    },
+    {
+      "source": "prequential_newton_candidate.py",
+      "sha256": "41e37f9ece6b609ca49d7b4f52c4cd99411134eb3e2e539ef14ea9037264761c",
+      "definitions": [
+        "prefix_newton_scores",
+        "PrequentialNewtonReadout"
+      ],
+      "methods": null
+    },
+    {
+      "source": "concept_graph_candidate.py",
+      "sha256": "6b3c6f146ff24595f7d2e149bd351bfa041b0452df3005c9582d340d993ee85c",
+      "definitions": [
+        "graph_state_rollout",
+        "DirectedConceptGraph"
+      ],
+      "methods": null
+    },
+    {
+      "source": "ffn_gate_candidate.py",
+      "sha256": "3c80a24b2c4f42991e638c8740378f60fc545369fce91bc2e4f2c61101c544c7",
+      "definitions": [
+        "InputGatedFeedForward"
+      ],
+      "methods": null
+    },
+    {
+      "source": "sources/work/a2g_mambakt_promoted_no_duplicate_folded_bias_20260715.py",
+      "sha256": "3ee4e7e476e6a9b055caedc9c0607274c6bfe923e69c2d90921ce2326b1fabee",
+      "definitions": [
+        "A2GMambaKT"
+      ],
+      "methods": [
+        "__init__",
+        "reset_parameters",
+        "set_prior_logits",
+        "_sequences",
+        "_stats",
+        "_boundary_weights"
+      ]
+    },
+    {
+      "source": "sources/work/a2g_mambakt_one_epoch_concept_novelty_curriculum_candidate.py",
+      "sha256": "1d9e4e50de60040834b2d3367bbfbc22abf0bac45c0239c94db2ed83d6f5c900",
+      "definitions": [
+        "A2GMambaKT"
+      ],
+      "methods": [
+        "_concept_novelty_mask",
+        "complete_concept_novelty_warmup",
+        "train"
+      ]
+    },
+    {
+      "source": "sources/work/a2g_mambakt_evidence_equivalent_residual_candidate.py",
+      "sha256": "1cb8e4754fbb719b6edd6746c9e15d62bc7a55eeab6bb8b2190b3e93ec2f993a",
+      "definitions": [
+        "A2GMambaKT"
+      ],
+      "methods": [
+        "identity_support",
+        "set_prior_support",
+        "_item_residual_reliability"
+      ]
+    },
+    {
+      "source": "sources/work/a2g_mambakt_recency_weighted_concept_evidence_candidate.py",
+      "sha256": "5870d66e798fccb44b907115690c7b806068c2132238e3ad88d03ed4aaa3590e",
+      "definitions": [
+        "A2GMambaKT"
+      ],
+      "methods": [
+        "_recency_weighted_concept_evidence_components",
+        "_recency_weighted_concept_evidence",
+        "_replace_learned_exposure"
+      ]
+    },
+    {
+      "source": "sources/a2g_mambakt_final.py",
+      "sha256": "509189b84aeb383d712945ab90b5992e0d76359f292df3f9ddfca726993584b9",
+      "definitions": [
+        "A2GMambaKT"
+      ],
+      "methods": [
+        "_scheduled_dropout",
+        "_apply_item_residual_dropout"
+      ]
+    },
+    {
+      "source": "strict_sequence_data.py",
+      "sha256": "262b983918dd9753929ca6e63dd80d563a763ead938cddbbe8bc972ed56ed300",
+      "definitions": [
+        "FIELDS",
+        "TrainValidationDataset",
+        "collate_ordered_segments",
+        "FixedOrderBatchSampler"
+      ],
+      "methods": null
+    },
+    {
+      "source": "sources/a2g_uid_topological_loader_20260807.py",
+      "sha256": "8ca3b408a8bdc69a43dd833885d4ec636a8d7aef61f8e719c2891d192fca8e20",
+      "copy": "uid.py"
+    },
+    {
+      "source": "sources/a2g_dropout_substream_alignment_20260807.py",
+      "sha256": "406a420224a10b118fdc24c19675bc919b08ac2f616a414baa41b20e3f4b759a",
+      "copy": "randomness.py"
+    },
+    {
+      "source": "input_memory_candidate.py",
+      "sha256": "628dfbdfc867e350a2bd40099227f51e5037eeeba76cbe93213ad13fd68d6ad0",
+      "definitions": [
+        "CausalInputMemory",
+        "InputMemorySSM"
+      ],
+      "methods": null
+    },
+    {
+      "source": "modal_residual_candidate.py",
+      "sha256": "1a80b2f27d0f8a6db0051765e5eb382db1fb8f745deeac56508860462b04b00c",
+      "definitions": [
+        "MultiModeResidualInputMemorySSM"
+      ],
+      "methods": null
+    }
+  ]
+}

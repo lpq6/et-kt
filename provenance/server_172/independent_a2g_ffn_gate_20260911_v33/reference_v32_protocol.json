@@ -1,0 +1,425 @@
+{
+  "ablation_scope": {
+    "attention": "Remove original attention/FFN effects and gradients; graph recurrence stays active.",
+    "common": "The same five qualifying datasets must pass all eight independently trained module controls.",
+    "completion": "This package permits Assist2017 Full only. An independently audited pilot strictly above 0.8174 is required before any separately frozen expansion or independent module-control phase. One pilot never completes the same-five-of-eight goal.",
+    "concept_graph": "Remove only graph recurrence; existing independently trained V28 is a control after complete parity audits.",
+    "evidence": "Remove priors, learned statistics, direct evidence logits and support reliability; retain raw historical q/c/r and temporal conditioning.",
+    "factorized_input": "Disable the preserved v12 factorized residual path and train the remaining model independently.",
+    "history_pace": "Remove only V27 historical-time conditioning; Newton readout remains active. A fresh matched control would be required after admission.",
+    "item_attempt_stage": "Disable only the ordinal attempt readout; historical time conditioning remains active.",
+    "prequential_newton": "Disable only Newton; graph recurrence stays active. A fresh matched control is required after admission.",
+    "ssm": "Zero SSM output in both uses; graph recurrence stays active."
+  },
+  "assist2017_first_gate": {
+    "expansion_requires_new_frozen_package": true,
+    "independent_terminal_audit_required": true,
+    "other_datasets_executable_in_this_package": false,
+    "strict_auc_floor": 0.8174
+  },
+  "baseline_training": {
+    "incumbent_rerun": false,
+    "run": false
+  },
+  "best_candidate": {
+    "auc": 0.800317550319877,
+    "candidate_id": "a2g_v27_prequential_newton_readout_20260910_v28",
+    "initial_state_path": "/home/lpq/a2g_mambakt/independent_a2g_prequential_newton_20260910_v28/artifacts/assist2017/seed42/initial_state.pt",
+    "initial_state_sha256": "efe3354089265ddf936e1ee24e366df4833308ac774f6cb10f9a902bd3c6d3c9",
+    "initial_state_use": "comparison only; no artifact supplies model initialization",
+    "reference_dataset": "assist2017",
+    "result_path": "/home/lpq/a2g_mambakt/independent_a2g_prequential_newton_20260910_v28/artifacts/assist2017/seed42/full/result.json",
+    "result_sha256": "4fe6a33032324ed7685218938ef1d38f4892d6eaaec78045178ff876ea35a4fa",
+    "source_sha256": "41e37f9ece6b609ca49d7b4f52c4cd99411134eb3e2e539ef14ea9037264761c"
+  },
+  "best_candidate_role": "legacy field name: V28 is both the structural working control and highest observed Assist2017 candidate",
+  "best_observed_candidate": {
+    "auc": 0.800317550319877,
+    "candidate_id": "a2g_v27_prequential_newton_readout_20260910_v28",
+    "result_path": "/home/lpq/a2g_mambakt/independent_a2g_prequential_newton_20260910_v28/artifacts/assist2017/seed42/full/result.json",
+    "result_sha256": "4fe6a33032324ed7685218938ef1d38f4892d6eaaec78045178ff876ea35a4fa",
+    "same_as_structural_control": true
+  },
+  "candidate_id": "a2g_v28_directed_concept_graph_20260911_v32",
+  "candidate_structure": {
+    "active_initial_function_equals_v28": true,
+    "all_initial_state_tensors_equal_v28": false,
+    "applicability_limit": "metadata coverage and synthetic witnesses are not positive module evidence",
+    "assist2017_capacity": 96,
+    "assist2017_known_graph_nodes": 94,
+    "attention_passes": 4,
+    "base": "a2g_v27_prequential_newton_readout_20260910_v28",
+    "changed_path": "learner-local directed concept-node recurrence projected into the token before the unchanged SSM",
+    "common_initial_parameters_equal_v28": true,
+    "concept_graph_passes": 1,
+    "disabled_behavior": "use_concept_graph=0 returns unchanged V28 forward; Newton conditional dispatch keeps the graph when Newton is disabled",
+    "dropout_policy": "original stochastic modules/calls retained; no new dropout",
+    "edge_formula": "source/destination projections of LN(history_concept_embedding); off-diagonal softmax(dot/sqrt(rank)), fixed self weight1",
+    "expected_assist2017_parameters": 4712949,
+    "expected_parent_state_tensors": 95,
+    "expected_total_state_tensors": 105,
+    "extra_cost": "B*T*C*R learner-node updates with PyTorch GRUCell; graph weights shared across learners",
+    "fixed_width_contract": "graph recurrence is prefix-causal; full model retains original width200 statistics",
+    "formula": "u=tanh(W_event LN(history)+b_event+W_state h[source]); h[j]=lerp(h[j],GRUCell(u,h[j]),edge[source,j]); token+=W_output h[target]",
+    "full_model_arbitrary_width_equivalence_claimed": false,
+    "graph_rank": 32,
+    "graph_shapes": {
+      "cell.bias_hh": [
+        96
+      ],
+      "cell.bias_ih": [
+        96
+      ],
+      "cell.weight_hh": [
+        96,
+        32
+      ],
+      "cell.weight_ih": [
+        96,
+        32
+      ],
+      "destination_projection.weight": [
+        32,
+        256
+      ],
+      "event_projection.bias": [
+        32
+      ],
+      "event_projection.weight": [
+        32,
+        256
+      ],
+      "output.weight": [
+        256,
+        32
+      ],
+      "source_projection.weight": [
+        32,
+        256
+      ],
+      "state_projection.weight": [
+        32,
+        32
+      ]
+    },
+    "history_pace": "unchanged retained historical-time conditioning",
+    "inherited_auxiliary_state_tensors": [
+      "attempt_readout.attempt_embedding.weight",
+      "attempt_readout.failure_embedding.weight",
+      "attempt_readout.output.weight",
+      "attempt_readout.run_embedding.weight",
+      "attempt_readout.sequence_norm.bias",
+      "attempt_readout.sequence_norm.weight",
+      "attempt_readout.sequence_projection.weight",
+      "attempt_readout.success_embedding.weight",
+      "attempt_readout.target_norm.bias",
+      "attempt_readout.target_norm.weight",
+      "attempt_readout.target_projection.weight",
+      "history_pace.scale",
+      "history_pace.shift",
+      "prequential_newton.output_scale",
+      "prequential_newton.projection.weight"
+    ],
+    "initialization": "standard Linear/GRUCell constructors in declared order within CPU fork_rng; only output.weight zero",
+    "input_projection_passes": 1,
+    "known_concept_policy": "2 <= ID < num_c; parent spare final embedding row excluded",
+    "literature_novelty_claimed": false,
+    "new_parameters": 40160,
+    "new_state_tensors": [
+      "concept_graph.cell.bias_hh",
+      "concept_graph.cell.bias_ih",
+      "concept_graph.cell.weight_hh",
+      "concept_graph.cell.weight_ih",
+      "concept_graph.destination_projection.weight",
+      "concept_graph.event_projection.bias",
+      "concept_graph.event_projection.weight",
+      "concept_graph.output.weight",
+      "concept_graph.source_projection.weight",
+      "concept_graph.state_projection.weight"
+    ],
+    "padding_policy": "unknown/padding/unobserved history is identity update; unknown/padding target reads zero",
+    "pedagogical_prerequisites_claimed": false,
+    "potential_same_five_with_all_eight_modules": [
+      "assist2012",
+      "assist2017",
+      "junyi2015",
+      "nips_task34",
+      "slepemapy"
+    ],
+    "prequential_newton": "unchanged retained Newton module, explicitly conditional in copied forward",
+    "production_fixed_width": 200,
+    "rank_rule": "one original attention head D/H",
+    "retained_ablation_policy": "all seven old ablations retain graph effects and gradients; each removes only its own path",
+    "ssm_passes": 1,
+    "state_scope": "zero initial learner-local node states on every forward; no state carry between segments or calls",
+    "statistics": "unchanged V28 statistics",
+    "unknown_id_policy": "ID0 padding, ID1 unknown; neither defines a graph node",
+    "unused_inputs": [
+      "shft_rseqs",
+      "current/future responses",
+      "shft_tseqs",
+      "utseqs",
+      "shft_utseqs"
+    ],
+    "zero_initialized_new_tensors": [
+      "concept_graph.output.weight"
+    ]
+  },
+  "closed_predecessor": {
+    "admission_pass": false,
+    "auc": 0.8000950827746682,
+    "candidate_id": "a2g_v28_gaussian_overlap_attention_20260911_v31",
+    "required_status": "complete_independent_random_init_validation",
+    "result_path": "/home/lpq/a2g_mambakt/independent_a2g_gaussian_overlap_20260911_v31/artifacts/assist2017/seed42/full/result.json",
+    "result_sha256": "ff79c92fba2147202e62593a29b7e8602fe627b4224c8bbf9355e5bff8852d30"
+  },
+  "completion_requirements": [
+    "At least the same five of eight datasets exceed all applicable existing reference scores, with references reconciled to the supplied table.",
+    "The same five datasets must pass independently trained evidence, SSM, attention, factorized-input, item-attempt, history-pace, prequential-Newton and concept-graph controls.",
+    "Positive module AUC effects and learner-cluster uncertainty are audited; single seed42 and validation fold0 remain the user scope.",
+    "No baseline or existing incumbent retraining, checkpoint initialization, hyperparameter sweep, extra seed search or silent resource retry.",
+    "Preserve learner isolation, training-only vocabularies/priors, immutable source/data/initialization/schedule provenance and causal prediction.",
+    "Report reference-score comparisons as descriptive, not matched five-fold or held-out generalization evidence; missing baselines never count as zero.",
+    "Assist2017 must pass its unchanged floor and independent audit before any other dataset is run."
+  ],
+  "controls": [],
+  "dataset_order": [
+    "assist2017"
+  ],
+  "dataset_order_rule": "explicit user instruction: Assist2017 must pass first",
+  "datasets": [
+    "assist2017"
+  ],
+  "eligible_datasets": [
+    "statics2011",
+    "assist2009_corrected_collapsed",
+    "assist2017",
+    "nips_task34",
+    "assist2015",
+    "assist2012",
+    "slepemapy",
+    "junyi2015"
+  ],
+  "execution_order": [
+    "full"
+  ],
+  "experiment_family": "independent_a2g_concept_graph_20260911_v32",
+  "failure_policy": "One Assist2017 Full run, max200/patience20. AUC<=0.8174 closes concept-graph variants involving edge orientation/normalization, self/neighbor weighting, sparsity, state rank, recurrent-cell/gates, message/readout, placement, initialization, width or seed retries. No baseline/control rerun, sweep or automatic resource retry.",
+  "global_admission": {
+    "dataset_point_gate": "Full AUC strictly exceeds that dataset's unchanged reference floor",
+    "eligible_dataset_count": 8,
+    "futility_rule": "A completed Assist2017 AUC not strictly above 0.8174 closes this candidate. Other datasets cannot rescue a failed pilot and cannot execute in this package.",
+    "mandatory_assist2017_precondition": true,
+    "missing_or_interrupted_cell_is_not_a_scientific_failure": true,
+    "required_dataset_count": 5,
+    "same_datasets_for_baselines_and_all_modules": true
+  },
+  "host": "172.25.114.0",
+  "hypothesis": "A shifted observed event updates coupled concept-specific learner states; source-state-dependent messages can propagate ordered effects to an unpracticed target. Test this recurrence without changing V28 inputs or its seven modules.",
+  "incumbent": {
+    "auc": 0.7857959831005806,
+    "best_epoch": 41,
+    "candidate_id": "single_trunk_retained_memory_readout_20260907_v1",
+    "checkpoint_path": "/home/lpq/a2g_mambakt/independent_trainfold_20260907_v2_172/artifacts/assist2017/seed42/full/selected_model.pt",
+    "checkpoint_sha256": "3d05cba823cb2126b19de52e56bf0edb347a094a6e086e9624cb324b113ee20a",
+    "epochs": 61,
+    "initial_state_path": "/home/lpq/a2g_mambakt/independent_trainfold_20260907_v2_172/artifacts/assist2017/seed42/initial_state.pt",
+    "initial_state_sha256": "c083eacc76d6854bab60329586a375eef9c29ab7ebe9ba93411a84c01abe593f",
+    "initial_state_use": "Compare with independently generated random-init tensors only; never initialize or fine-tune from a trained checkpoint.",
+    "package_manifest_sha256": "86ceda4c1394c41b21c6d479e82d3df1944d8f3dddf89248eccd9874990f41a2",
+    "retained_paths": [
+      "support-calibrated priors and RWCE",
+      "original SSM",
+      "original four-layer postnorm attention",
+      "retained SSM readout",
+      "original prediction projections and dropout"
+    ],
+    "source_sha256": "25150aa675b480661daceaeee3d254645327e642e6bf74a30e2a692ba5a3c1d8"
+  },
+  "item_dropout_override": {
+    "assist2015": 0.0
+  },
+  "launcher": {
+    "required_entry": "launch_candidate.py",
+    "source_sha256": "36ce98712b932ea7d82bc9e5a30c8b43df844f39662fd796f09e08c9bc3a2eef"
+  },
+  "model_kwargs": {
+    "boundary_local_floor": 0.5,
+    "d_ff": 512,
+    "d_model": 256,
+    "dropout": 0.2,
+    "input_decay_scale": 0.5,
+    "item_residual_dropout": 0.4,
+    "item_residual_dropout_schedule": "constant",
+    "n_blocks": 4,
+    "normalization_topology": "full_postnorm",
+    "num_attn_heads": 8,
+    "prior_scale": 0.08,
+    "seq_len": 200,
+    "stat_scale": 0.12,
+    "support_smoothing": 24.0,
+    "use_concept_graph": 1,
+    "use_evidence_equivalent_residual": 1,
+    "use_factorized_input": 1,
+    "use_history_pace": 1,
+    "use_item_attempt_stage": 1,
+    "use_prequential_newton": 1,
+    "use_recency_weighted_concept_evidence": 1,
+    "use_split_boundary": 1
+  },
+  "phase": "assist2017_full_only",
+  "physical_gpu": 1,
+  "pilot": {
+    "dataset": "assist2017",
+    "seed": 42
+  },
+  "planned_ablation_variants": {
+    "no_attention": {
+      "use_attention_branch": 0
+    },
+    "no_concept_graph": {
+      "use_concept_graph": 0
+    },
+    "no_evidence": {
+      "use_evidence_branch": 0
+    },
+    "no_factorized_input": {
+      "use_factorized_input": 0
+    },
+    "no_history_pace": {
+      "use_history_pace": 0
+    },
+    "no_item_attempt_stage": {
+      "use_item_attempt_stage": 0
+    },
+    "no_prequential_newton": {
+      "use_prequential_newton": 0
+    },
+    "no_ssm": {
+      "use_ssm_branch": 0
+    }
+  },
+  "point_gate": {
+    "admission": "Assist2017 Full strictly exceeds 0.8174 and passes independent audit before separately frozen expansion; V28 is both structural control and highest observation.",
+    "candidate_minus_best_candidate_auc": "legacy field compares to the independently trained V28 control",
+    "candidate_minus_incumbent_auc": "Assist2017 reference comparison only; not a cross-dataset metric",
+    "full_minus_each_ablation_acc": ">= 0",
+    "full_minus_each_ablation_auc": "> 0",
+    "full_minus_existing_reference_floor_auc": "> 0; descriptive comparison, not matched baseline retraining",
+    "historical_reference": "descriptive_only"
+  },
+  "prospective_protocol_changes": {
+    "information_boundary": "no new inputs, labels, preprocessing, priors or fitted data transforms",
+    "new_module_family": "Keep family64; the graph remains independent of the attention contrast.",
+    "pre_freeze_capacity_correction": "exclude the parent's unused extra embedding row; preserve initial42 and corrected45 test evidence",
+    "previous_candidate": "V31 Gaussian overlap is closed and absent. V28 remains parent/control/best.",
+    "unchanged_scope": "one Assist2017 Full run; other datasets and module retraining disabled"
+  },
+  "reference_auc": {
+    "assist2009_corrected_collapsed": 0.8566249815040318,
+    "assist2012": 0.779282,
+    "assist2015": 0.7337756158427048,
+    "assist2017": 0.8174,
+    "junyi2015": 0.804888,
+    "nips_task34": 0.8273,
+    "slepemapy": 0.800163,
+    "statics2011": 0.8293542042910951
+  },
+  "reference_snapshot": {
+    "csv_sha256": "ebbf935ed01adc381833a6422e8b9fe03d04dbffa5c217bee1e98f3fb6f65d88",
+    "floor_policy": "all eight v15 conservative floors retained without reduction",
+    "markdown_sha256": "8a5de11ae11e631a0565e090bde93871a3680caff4795e99e1ac9ebe64ab64b0"
+  },
+  "reference_status": "Unchanged conservative floors cover the current adjacent CSV maxima; Assist2017/NIPS retain the stronger paper-only numeric targets. Paper-only values are not represented as matched replications.",
+  "resource_policy": {
+    "block_other_compute_processes_on_any_gpu": true,
+    "block_other_user_processes_on_any_gpu": true,
+    "check_before_cuda": true,
+    "include_graphics_processes": true,
+    "inherited_guard_manifest_sha256": "f5f562b3d915e7bd533351c8dec0ffebdb344bb47fb533eae23e81cbc37927cd",
+    "limitation": "polling detects new arrivals but does not provide a scheduler-exclusive reservation",
+    "on_conflict": "terminate this job only; preserve partial artifacts; no automatic retry",
+    "physical_gpu": 1,
+    "policy_revision": "v15_resource_r1",
+    "poll_seconds": 2,
+    "revision_scope": "GPU resource policy only; model, data, initialization and training unchanged",
+    "supersedes_unexecuted_manifest_sha256": "11be22e6d054b33a6b6f118f84a500d06c16dcc727fc5e3dc9e706495d132353",
+    "system_display_exception": {
+      "compute_or_combined_type_exempted": false,
+      "identity_source": "nvidia-smi XML and independent ps PID/UID/username/kernel command",
+      "nvml_executable_to_kernel_command": {
+        "/usr/bin/gnome-shell": "gnome-shell",
+        "/usr/lib/xorg/Xorg": "Xorg"
+      },
+      "required_type": "G",
+      "required_uid": 128,
+      "required_user": "gdm"
+    },
+    "system_graphics_exception_authorized": true,
+    "unknown_owner_or_failed_query": "block",
+    "uuid": "GPU-e1065296-99f9-bf6e-7898-d6755ca37a9d"
+  },
+  "schema_version": 3,
+  "seeds": [
+    42
+  ],
+  "structural_control": {
+    "auc": 0.800317550319877,
+    "candidate_id": "a2g_v27_prequential_newton_readout_20260910_v28",
+    "initial_state_path": "/home/lpq/a2g_mambakt/independent_a2g_prequential_newton_20260910_v28/artifacts/assist2017/seed42/initial_state.pt",
+    "initial_state_sha256": "efe3354089265ddf936e1ee24e366df4833308ac774f6cb10f9a902bd3c6d3c9",
+    "initial_state_use": "comparison only; no artifact supplies model initialization",
+    "reference_dataset": "assist2017",
+    "result_path": "/home/lpq/a2g_mambakt/independent_a2g_prequential_newton_20260910_v28/artifacts/assist2017/seed42/full/result.json",
+    "result_sha256": "4fe6a33032324ed7685218938ef1d38f4892d6eaaec78045178ff876ea35a4fa",
+    "source_sha256": "41e37f9ece6b609ca49d7b4f52c4cd99411134eb3e2e539ef14ea9037264761c"
+  },
+  "test_access": false,
+  "train_folds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "training": {
+    "auxiliary_loss_weight": 0.0,
+    "batch_order": "fixed_csv_filtered_order",
+    "batch_size": 64,
+    "checkpoint_selection": "max validation AUC then min NLL, Brier, ECE15 then earliest epoch",
+    "cpu_threads": 1,
+    "deterministic_algorithms": true,
+    "evaluation_batch_size": 128,
+    "independent_optimizer_per_variant": true,
+    "initialization": "random_all_model_parameters_plus_training_only_empirical_priors",
+    "learning_rate": 0.0001,
+    "max_epochs": 200,
+    "optimizer": "Adam",
+    "patience": 20,
+    "pretrained_checkpoint": null,
+    "shared_initial_state_within_dataset_seed": true,
+    "state_carry_between_segments": false,
+    "weight_decay": 0.0
+  },
+  "uncertainty": {
+    "bootstrap_seed": 20260907,
+    "confidence_level": 0.95,
+    "module_effect_evidence_gate": "Positive AUC point effects and learner-bootstrap intervals; report both ordinary95% and family-adjusted intervals without claiming training-seed robustness.",
+    "multiplicity_family": "eight datasets times eight prespecified contrasts: evidence, SSM, attention, factorized input, item attempt, history pace, prequential Newton and concept graph",
+    "multiplicity_family_size": 64,
+    "paired_bootstrap_replicates": 10000,
+    "unit": "learner",
+    "validation_intervals": "Exploratory and conditional on validation checkpoint and architecture selection; not held-out or training-seed confirmation."
+  },
+  "user_scope": "Single fold (validation fold0) and single seed42. At least five of eight identical datasets must pass both all-baseline and independently retrained module gates. Five of five refers to datasets, not seeds.",
+  "validation_folds": [
+    0
+  ],
+  "variants": {
+    "full": {
+      "use_attention_branch": 1,
+      "use_evidence_branch": 1,
+      "use_ssm_branch": 1
+    }
+  },
+  "window_test_access": false
+}
